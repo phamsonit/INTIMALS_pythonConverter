@@ -1,0 +1,22 @@
+<Module><Expr><Str><s>"""
+class 4
+"""</s></Str></Expr>
+<ClassDef name="Class4">class Class4:<body>
+
+    <FunctionDef name="method1">def method1<arguments>(<arg name="self">self</arg>, <arg name="a">a</arg>, <arg name="b">b</arg>):</arguments><body>
+        <Assign><targets><Name ctx="Store" name="re">re</Name> = </targets><Num>0</Num></Assign>
+        <For>for <target><Name ctx="Store" name="i">i</Name></target> in <iter><Call><func><Name ctx="Load" name="range">range</Name></func>(<args><Name ctx="Load" name="a">a</Name></args>)</Call></iter>:<body>
+            <Assign><targets><Name ctx="Store" name="re">re</Name> = </targets><BinOp><Name ctx="Load" name="i">i</Name><Add> + </Add><Name ctx="Load" name="b">b</Name></BinOp></Assign></body></For>
+        <Expr><Call><func><Name ctx="Load" name="print">print</Name></func>(<args><Name ctx="Load" name="re">re</Name></args>)</Call></Expr></body></FunctionDef>
+
+    <FunctionDef name="method2">def method2<arguments>(<arg name="self">self</arg>, <arg name="a">a</arg>, <arg name="b">b</arg>):</arguments><body>
+        <Assign><targets><Name ctx="Store" name="re">re</Name> = </targets><Num>0</Num></Assign>
+        <For>for <target><Name ctx="Store" name="i">i</Name></target> in <iter><Call><func><Name ctx="Load" name="range">range</Name></func>(<args><Name ctx="Load" name="a">a</Name></args>)</Call></iter>:<body>
+            <If>if <test><Compare><value><BinOp><Name ctx="Load" name="i">i</Name><Mod> % </Mod><Num>2</Num></BinOp></value><cmpop> == </cmpop><value><Num>0</Num></value></Compare></test>:<body>
+                <Assign><targets><Name ctx="Store" name="re">re</Name> = </targets><BinOp><Name ctx="Load" name="i">i</Name><Add> + </Add><Name ctx="Load" name="b">b</Name></BinOp></Assign></body></If></body></For>
+        <Expr><Call><func><Name ctx="Load" name="print">print</Name></func>(<args><Name ctx="Load" name="re">re</Name></args>)</Call></Expr></body></FunctionDef></body></ClassDef>
+
+
+<Assign><targets><Name ctx="Store" name="cla">cla</Name> = </targets><Call><func><Name ctx="Load" name="Class4">Class4</Name></func>()</Call></Assign>
+<Expr><Call><func><Attribute ctx="Load"><value><Name ctx="Load" name="cla">cla</Name></value>.<attr>method1</attr></Attribute></func>(<args><Num>3</Num>, <Num>4</Num></args>)</Call></Expr>
+</Module>

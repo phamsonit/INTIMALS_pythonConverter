@@ -1,0 +1,34 @@
+<Module><Expr><Str><s>"""
+class 2
+"""</s></Str></Expr>
+<ClassDef name="Class2">class Class2:<body>
+
+    <FunctionDef name="method1">def method1<arguments>(<arg name="self">self</arg>, <arg name="a">a</arg>, <arg name="b">b</arg>, <arg name="c">c</arg>):</arguments><body>
+        <If>if <test><Compare><value><Name ctx="Load" name="a">a</Name></value><cmpop> &gt; </cmpop><value><Name ctx="Load" name="b">b</Name></value></Compare></test>:<body>
+            <AugAssign><target><Name ctx="Store" name="a">a</Name></target><op><Sub> -= </Sub></op><value><Name ctx="Load" name="b">b</Name></value></AugAssign></body>
+        <orelse>else:
+            <AugAssign><target><Name ctx="Store" name="b">b</Name></target><op><Sub> -= </Sub></op><value><Name ctx="Load" name="a">a</Name></value></AugAssign></orelse></If>
+        <Return>return <BinOp><BinOp><Name ctx="Load" name="a">a</Name><Div>/</Div><Name ctx="Load" name="b">b</Name></BinOp><Sub>-</Sub><Name ctx="Load" name="c">c</Name></BinOp></Return></body></FunctionDef>
+
+    <FunctionDef name="method2">def method2<arguments>(<arg name="self">self</arg>, <arg name="a">a</arg>, <arg name="b">b</arg>):</arguments><body>
+        <If>if <test><Compare><value><Name ctx="Load" name="a">a</Name></value><cmpop> &gt; </cmpop><value><Name ctx="Load" name="b">b</Name></value></Compare></test>:<body>
+            <AugAssign><target><Name ctx="Store" name="a">a</Name></target><op><Sub> -= </Sub></op><value><Name ctx="Load" name="b">b</Name></value></AugAssign></body>
+        <orelse>else:
+            <AugAssign><target><Name ctx="Store" name="a">a</Name></target><op><Add> += </Add></op><value><Name ctx="Load" name="b">b</Name></value></AugAssign></orelse></If>
+        <Return>return <BinOp><Name ctx="Load" name="a">a</Name><Div>/</Div><Name ctx="Load" name="b">b</Name></BinOp></Return></body></FunctionDef></body></ClassDef>
+
+
+<Expr><Str><s>"""
+ comments on
+ multiple lines
+"""</s></Str></Expr>
+
+<Assign><targets><Name ctx="Store" name="cla">cla</Name> = </targets><Call><func><Name ctx="Load" name="Class2">Class2</Name></func>()</Call></Assign>
+<Expr><Call><func><Name ctx="Load" name="print">print</Name></func>(<args><Call><func><Attribute ctx="Load"><value><Name ctx="Load" name="cla">cla</Name></value>.<attr>method2</attr></Attribute></func>(<args><Num>3</Num>, <Num>4</Num></args>)</Call></args>)</Call></Expr>
+
+<Expr><Str><s>""" single line comment """</s></Str></Expr>
+
+<Assign><targets><Name ctx="Store" name="appro">appro</Name> = </targets><Num>0</Num></Assign>
+<Assign><targets><Name ctx="Store" name="j">j</Name> = </targets><Num>1</Num></Assign>
+<Assign><targets><Name ctx="Store" name="appro">appro</Name> = </targets><BinOp><Name ctx="Load" name="appro">appro</Name><Add> + </Add><BinOp><Num>4</Num><Mult>*</Mult>(<BinOp>(<BinOp>(<UnaryOp op="USub">-<Num>1</Num></UnaryOp>)<Pow>**</Pow><Name ctx="Load" name="j">j</Name></BinOp>)<Div>/</Div>(<BinOp>(<BinOp><Num>2</Num><Mult>*</Mult><Name ctx="Load" name="j">j</Name></BinOp>)<Add>+</Add><Num>1</Num></BinOp>)</BinOp>)</BinOp></BinOp></Assign>
+</Module>
