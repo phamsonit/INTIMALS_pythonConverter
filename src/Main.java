@@ -11,9 +11,9 @@ public class Main {
     public static void main(String[] args) {
 
         //TEST on sample data
-        args = new String[2];
-        args[0] = "sample_input";
-        args[1] = "sample_output";
+//        args = new String[2];
+//        args[0] = "sample_input";
+//        args[1] = "sample_output";
 
         if (args.length != 2) {
             System.out.println("Usage:");

@@ -254,7 +254,6 @@ public class TransformPyAST {
         }
     }
 
-
     /**
      * update an internal node
      * @param node : node
@@ -513,7 +512,7 @@ public class TransformPyAST {
     private void addIdentifier(Node node, String identifier){
         try {
             //collect variable name
-            collectLinesVariables(node, identifier);
+            collectLinesVariables(node, identifier.trim());
 
             //create new element "Identify" with attributes
             Element iden_child = document.createElement("identifier");
@@ -656,7 +655,7 @@ public class TransformPyAST {
             if(combinedOperators.contains(identifier.trim())) {
                 return ++index;
             }
-            //if identifier is an operator
+            // if identifier is a operator
             Set<String> operators = new HashSet<>(Arrays.asList("+","-","*","/","**"));
             if(operators.contains(identifier)){
                 index = getIndexOfOperator(inputString, identifier, nbIdentifierOccur, index);
@@ -736,6 +735,7 @@ public class TransformPyAST {
      * @return : true if identifier is included in a substring
      */
     private boolean isInString(String inputString, String identifier, int index){
+        // identifier at the first line
         if(index == 0 && identifier.length() < inputString.length()){
             // last char is an alphabetic
             boolean lastChar = Character.isAlphabetic(inputString.charAt(index + identifier.length()));
@@ -747,12 +747,12 @@ public class TransformPyAST {
             // first char is an alphabetic
             boolean firstChar = Character.isAlphabetic(inputString.charAt(index - 1));
             // last char is an alphabetic
-            boolean lastChar = Character.isAlphabetic(inputString.charAt(index + identifier.length()));
+            boolean lastChar = Character.isAlphabetic(inputString.charAt(index + identifier.length())) ||
+                    Character.isDigit(inputString.charAt(index + identifier.length()));
             // first char is an _
             boolean firstCharDash = inputString.charAt(index -1) == '_';
             // last char is an _
             boolean lastCharDash = inputString.charAt(index + identifier.length()) == '_';
-
 
             return  firstChar || lastChar || firstCharDash || lastCharDash;
         }else
