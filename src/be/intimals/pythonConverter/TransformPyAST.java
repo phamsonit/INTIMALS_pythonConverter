@@ -20,9 +20,6 @@ public class TransformPyAST {
     private static String EndLineNr = "EndLineNr";
     private static String ColNr = "ColNr";
     private static String EndColNr = "EndColNr";
-    private static String InterAstNode = "InterAstNode";
-    private static String interNode = "interNode";
-
 
     private Map<Integer, List<String>> linesVariables;
 
@@ -85,7 +82,6 @@ public class TransformPyAST {
         }
     }
 
-
     /**
      * recursively update a node
      * @param node
@@ -96,6 +92,7 @@ public class TransformPyAST {
             if(node.getNodeType() == Node.ELEMENT_NODE) {
                 //ignore manually added tags
                 if(node.getNodeName().equals("nameDef") || node.getNodeName().equals("identifier")) return;
+
                 //update attributes for this node
                 updateAttribute(node);
                 //increase node ID
@@ -109,7 +106,6 @@ public class TransformPyAST {
                 //special cases: cmpop node
                 Set<String> specialCases = new HashSet<>(Arrays.asList("cmpop", "attr", "name"));
                 if(specialCases.contains(node.getNodeName())){
-                //if( node.getNodeName().equals("cmpop") || node.getNodeName().equals("attr")) {
                     treatCmpopNode(node);
                     return;
                 }
@@ -128,11 +124,14 @@ public class TransformPyAST {
                  */
                 //special case: node label is body, then need to add intermediate nodes: Block -> statements
                 if(node.getNodeName().equals("body") || node.getNodeName().equals("orelse")){
+                    // increase line to lineNr + 1
+                    increaseLineNr(node);
+                    // add Block to body
                     addBlockStatements(node);
                 }else{
                     //case 1
                     if(isAstNode(node) && containAstNode(node)){
-                        addInterNode(node, interNode);
+                        addInterNode(node, "interNode");
                     }else{
                         //case 2
                         if(isAstNode(node) && hasRepeatedChildren(node)){
@@ -164,17 +163,6 @@ public class TransformPyAST {
                             addIdentifier(node.getParentNode(), leaf);
                             //Clear text content
                             node.setNodeValue("");
-                        }else{
-                            // set comment
-                            System.out.println(node.getParentNode().getNodeName()+" "+leaf);
-                            StringBuilder stb = new StringBuilder();
-                            String [] strAry = leaf.split("\n");
-                            for(int k = 0; k < strAry.length; k++){
-                                stb.append(strAry[k]);
-                                stb.append("\n");
-                            }
-                            node.setTextContent(stb.toString());
-
                         }
                     }else{
                         //Clear a text content
@@ -186,6 +174,23 @@ public class TransformPyAST {
             e.printStackTrace();
             System.exit(-1);
         }
+    }
+
+    /**
+     * calculate line number for body node
+     * @param node : body
+     */
+    private void increaseLineNr(Node node) {
+        // get begin and end line numbers
+        int lineNr = Integer.valueOf(node.getParentNode().getAttributes().getNamedItem(LineNr).getNodeValue());
+        int endLineNr = Integer.valueOf(node.getParentNode().getAttributes().getNamedItem(EndLineNr).getNodeValue());
+        // if the code has more than 1 line
+        if(lineNr < endLineNr)
+            // recalculate begin line number
+            lineNr = Integer.valueOf(node.getAttributes().getNamedItem(LineNr).getNodeValue()) + 1;
+        // update line number attributes
+        ((Element)node).setAttribute(LineNr, String.valueOf(lineNr));
+        ((Element)node).setAttribute(EndLineNr, String.valueOf(endLineNr));
     }
 
     /**
@@ -232,26 +237,23 @@ public class TransformPyAST {
         NodeList nodeList = node.getChildNodes();
         for(int i=0; i<nodeList.getLength(); ++i){
             if(nodeList.item(i).getNodeType() == Node.ELEMENT_NODE){
-                //get AST name
-                String oldNodeName = nodeList.item(i).getNodeName();
-                String newNodeName = Character.toUpperCase(oldNodeName.charAt(0)) +
-                        oldNodeName.substring(1, oldNodeName.length());
-                //change node name
-                document.renameNode(nodeList.item(i), null, newNodeName);
-                //update attribute for this node
+                // change to AST node
+                changeNodeToAST(nodeList.item(i));
+                // update attribute for this node
                 updateAttribute(nodeList.item(i));
                 ++id;
-                //add identifier
+                // add identifier
                 String identifier = nodeList.item(i).getTextContent();
-                //delete text content of this node
+                // delete text content of this node
                 nodeList.item(i).setTextContent("");
-                //add an identifier node to this node
+                // add an identifier node to this node
                 addIdentifier(nodeList.item(i), identifier);
             }else{
                 updateTextNode(nodeList.item(i));
             }
         }
     }
+
 
     /**
      * update an internal node
@@ -262,23 +264,30 @@ public class TransformPyAST {
         //add intermediate node
         addIntermediateNode(node, tagName);
 
-        //move children AST nodes to intermediate node
-        moveChildrenNodes(node, tagName);
-        //moveAstNode(node, node.getChildNodes());
+        //move children to intermediate node
+        moveAllChildren(node, node.getChildNodes());
 
         //recursively read children of the intermediate node
         NodeList interChildren = node.getFirstChild().getChildNodes();
         for (int i = 0; i < interChildren.getLength(); ++i) {
-            updateNodes(interChildren.item(i));
-        }
-
-        //recursively read other children of the node
-        NodeList otherChildren = node.getChildNodes();
-        for (int i = 1; i < otherChildren.getLength(); ++i) {
-            updateNodes(otherChildren.item(i));
+            if(isAstNode(interChildren.item(i)))
+                updateNodes(interChildren.item(i));
+            else{
+                // change to AST node
+                changeNodeToAST(interChildren.item(i));
+                // update this node
+                updateNodes(interChildren.item(i));
+            }
         }
     }
 
+    private void changeNodeToAST(Node node){
+        String oldNodeName = node.getNodeName();
+        String newNodeName = Character.toUpperCase(oldNodeName.charAt(0)) +
+                oldNodeName.substring(1, oldNodeName.length());
+        //change node name
+        document.renameNode(node, null, newNodeName);
+    }
     /**
      * add Block -> statements to body
       * @param node : input node ~ body
@@ -316,7 +325,7 @@ public class TransformPyAST {
         //change name for each child if it is in repeated list
         NodeList nodeList = node.getChildNodes();
         Map<String,Integer> oc = getRepeatedChildren(node);
-        int count=0;
+        int count = 1;
         for(int i = 0; i<nodeList.getLength(); ++i){
             if(oc.containsKey(nodeList.item(i).getNodeName())){
                 //change name
@@ -382,26 +391,13 @@ public class TransformPyAST {
     }
 
     /**
-     * mode children from the second to the first child of the node
-     * @param node : xml node
-     */
-    private void moveChildrenNodes(Node node, String tagName){
-        NodeList nodeList = node.getChildNodes();
-        if(Character.isLowerCase(tagName.charAt(0)) ){
-            moveAstNode(node, nodeList);
-        }else{
-            moveNonAstNode(node, nodeList);
-        }
-    }
-
-    /**
-     * //move all AST children to a node
+     * //move all children to the first child
      * @param node : node
      * @param nodeList : children
      */
-    private void moveAstNode(Node node, NodeList nodeList) {
+    private void moveAllChildren(Node node, NodeList nodeList) {
         for(int i=1; i<nodeList.getLength(); ++i){
-            if(nodeList.item(i).getNodeType() == Node.ELEMENT_NODE && isAstNode(nodeList.item(i))){
+            if(nodeList.item(i).getNodeType() == Node.ELEMENT_NODE){
                 node.getFirstChild().appendChild(nodeList.item(i));
                 --i;
             }else{
@@ -414,14 +410,15 @@ public class TransformPyAST {
     }
 
     /**
-     * move all non-AST nodes to a node
-     * @param node : xml node
+     * //move all AST children to the first child of the node
+     * @param node : node
      * @param nodeList : children
      */
-    private void moveNonAstNode(Node node, NodeList nodeList) {
-        for(int i=1; i<nodeList.getLength(); i++){
-            if(nodeList.item(i).getNodeType() == Node.ELEMENT_NODE && !isAstNode(nodeList.item(i))){
+    private void moveAstNode(Node node, NodeList nodeList) {
+        for(int i=1; i<nodeList.getLength(); ++i){
+            if(nodeList.item(i).getNodeType() == Node.ELEMENT_NODE && isAstNode(nodeList.item(i))){
                 node.getFirstChild().appendChild(nodeList.item(i));
+                --i;
             }else{
                 if(nodeList.item(i).getNodeType() == Node.TEXT_NODE) {
                     //System.out.println("deleting text ... " + nodeList.item(i).getTextContent().trim());

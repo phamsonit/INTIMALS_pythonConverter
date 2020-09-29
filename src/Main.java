@@ -4,10 +4,7 @@
  * author: Hoang-Son PHAM
  */
 
-import java.io.*;
-
 import be.intimals.pythonConverter.*;
-
 
 public class Main {
 
