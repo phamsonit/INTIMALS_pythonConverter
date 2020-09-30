@@ -745,7 +745,8 @@ public class TransformPyAST {
         }
         if(index > 0 && index + identifier.length() < inputString.length()) {
             // first char is an alphabetic
-            boolean firstChar = Character.isAlphabetic(inputString.charAt(index - 1));
+            boolean firstChar = Character.isAlphabetic(inputString.charAt(index - 1)) ||
+                    Character.isDigit(inputString.charAt(index - 1));
             // last char is an alphabetic
             boolean lastChar = Character.isAlphabetic(inputString.charAt(index + identifier.length())) ||
                     Character.isDigit(inputString.charAt(index + identifier.length()));

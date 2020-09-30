@@ -8,12 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0b9e4923-add2-40d0-88a7-fba7f13f84f4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pythonConverter_jar/pythonConverter.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/pythonConverter_jar/pythonConverter.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pythonConverter/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pythonConverter/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pythonConverter/be/intimals/pythonConverter/TransformPyAST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pythonConverter/be/intimals/pythonConverter/TransformPyAST.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_output/sample1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sample_output/sample1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_output/sample2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sample_output/sample2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/intimals/pythonConverter/TransformPyAST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intimals/pythonConverter/TransformPyAST.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,7 +23,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
+            <state relative-caret-position="135">
               <caret line="13" selection-start-line="13" selection-start-column="2" selection-end-line="15" selection-end-column="36" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -41,8 +35,8 @@
       <file leaf-file-name="TransformPyAST.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/be/intimals/pythonConverter/TransformPyAST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="755" column="12" selection-start-line="755" selection-start-column="12" selection-end-line="755" selection-end-column="12" />
+            <state relative-caret-position="153">
+              <caret line="748" column="67" selection-start-line="748" selection-start-column="67" selection-end-line="748" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#transformPyAST#0;class#TransformPyAST#0" />
@@ -75,8 +69,8 @@
       <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/be/intimals/pythonConverter/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1340">
-              <caret line="115" column="5" lean-forward="true" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+            <state relative-caret-position="1530">
+              <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,7 +90,7 @@
       <file leaf-file-name="sample1.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sample_output/sample1.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="896">
+            <state relative-caret-position="6240">
               <caret line="416" column="49" selection-start-line="416" selection-start-column="48" selection-end-line="416" selection-end-column="49" />
               <folding>
                 <element signature="e#3946#3950#0" expanded="true" />
@@ -152,6 +146,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -179,9 +175,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -234,19 +228,17 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32938388" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2894144" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.47297296" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.17004505" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.365991" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21022727" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.39076576" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21347402" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -258,6 +250,8 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.39076576" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32938388" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -879,8 +873,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/be/intimals/pythonConverter/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1340">
-          <caret line="115" column="5" lean-forward="true" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+        <state relative-caret-position="1530">
+          <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -889,7 +883,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sample_output/sample1.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="896">
+        <state relative-caret-position="6240">
           <caret line="416" column="49" selection-start-line="416" selection-start-column="48" selection-end-line="416" selection-end-column="49" />
           <folding>
             <element signature="e#3946#3950#0" expanded="true" />
@@ -906,7 +900,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="135">
           <caret line="13" selection-start-line="13" selection-start-column="2" selection-end-line="15" selection-end-column="36" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -916,8 +910,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/be/intimals/pythonConverter/TransformPyAST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="755" column="12" selection-start-line="755" selection-start-column="12" selection-end-line="755" selection-end-column="12" />
+        <state relative-caret-position="153">
+          <caret line="748" column="67" selection-start-line="748" selection-start-column="67" selection-end-line="748" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#transformPyAST#0;class#TransformPyAST#0" />
