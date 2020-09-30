@@ -90,6 +90,7 @@ public class TransformPyAST {
         try {
             //if this is an internal node
             if(node.getNodeType() == Node.ELEMENT_NODE) {
+
                 //ignore manually added tags
                 if(node.getNodeName().equals("nameDef") || node.getNodeName().equals("identifier")) return;
 
@@ -123,7 +124,7 @@ public class TransformPyAST {
                  * otherwise: transform normally
                  */
                 //special case: node label is body, then need to add intermediate nodes: Block -> statements
-                if(node.getNodeName().equals("body") || node.getNodeName().equals("orelse")){
+                if(node.getNodeName().equals("body")){
                     // increase line to lineNr + 1
                     increaseLineNr(node);
                     // add Block to body
@@ -138,7 +139,7 @@ public class TransformPyAST {
                             treatRepeatedChildren(node);
                         }else {
                             //case 3
-                            if(!isAstNode(node) && !containAstNode(node) && node.getChildNodes().getLength() > 1){
+                            if(!isAstNode(node) && !containAstNode(node) ){
                                 changeToASTNode(node);
                             }else{
                                 //recursively read children of the current node
@@ -239,15 +240,22 @@ public class TransformPyAST {
             if(nodeList.item(i).getNodeType() == Node.ELEMENT_NODE){
                 // change to AST node
                 changeNodeToAST(nodeList.item(i));
-                // update attribute for this node
-                updateAttribute(nodeList.item(i));
-                ++id;
-                // add identifier
-                String identifier = nodeList.item(i).getTextContent();
-                // delete text content of this node
-                nodeList.item(i).setTextContent("");
-                // add an identifier node to this node
-                addIdentifier(nodeList.item(i), identifier);
+                // if this node contain an element the continue update this node
+                if(nodeList.item(i).getChildNodes().getLength() > 1){
+                    // System.out.println("update");
+                    updateNodes(nodeList.item(i));
+                }else{
+                    // System.out.println("add identifier");
+                    // update attribute for this node
+                    updateAttribute(nodeList.item(i));
+                    ++id;
+                    // add identifier
+                    String identifier = nodeList.item(i).getTextContent();
+                    // delete text content of this node
+                    nodeList.item(i).setTextContent("");
+                    // add an identifier node to this node
+                    addIdentifier(nodeList.item(i), identifier);
+                }
             }else{
                 updateTextNode(nodeList.item(i));
             }
