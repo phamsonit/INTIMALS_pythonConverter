@@ -8,10 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0b9e4923-add2-40d0-88a7-fba7f13f84f4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pythonConverter/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pythonConverter/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pythonConverter/be/intimals/pythonConverter/TransformPyAST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pythonConverter/be/intimals/pythonConverter/TransformPyAST.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_output/sample1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sample_output/sample1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_output/sample2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sample_output/sample2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/intimals/pythonConverter/TransformPyAST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intimals/pythonConverter/TransformPyAST.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,10 +20,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="195">
               <caret line="13" selection-start-line="13" selection-start-column="2" selection-end-line="15" selection-end-column="36" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -36,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TransformPyAST.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TransformPyAST.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/be/intimals/pythonConverter/TransformPyAST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="93" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="581">
+              <caret line="301" column="24" selection-start-line="301" selection-start-column="24" selection-end-line="301" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#transformPyAST#0;class#TransformPyAST#0" />
@@ -48,18 +44,14 @@
                 <element signature="method#increaseLineNr#0;class#TransformPyAST#0" />
                 <element signature="method#collectLinesVariables#0;class#TransformPyAST#0" />
                 <element signature="method#updateAttribute#0;class#TransformPyAST#0" />
-                <element signature="method#addInterNode#0;class#TransformPyAST#0" />
-                <element signature="method#changeNodeToAST#0;class#TransformPyAST#0" />
+                <element signature="method#changeToASTNode#0;class#TransformPyAST#0" />
                 <element signature="method#addBlockStatements#0;class#TransformPyAST#0" />
                 <element signature="method#treatRepeatedChildren#0;class#TransformPyAST#0" />
-                <element signature="method#treatCmpopNode#0;class#TransformPyAST#0" />
                 <element signature="method#getRepeatedChildren#0;class#TransformPyAST#0" />
                 <element signature="method#hasRepeatedChildren#0;class#TransformPyAST#0" />
                 <element signature="method#moveAllChildren#0;class#TransformPyAST#0" />
                 <element signature="method#moveAstNode#0;class#TransformPyAST#0" />
                 <element signature="method#updateTextNode#0;class#TransformPyAST#0" />
-                <element signature="e#17578#17579#0" expanded="true" />
-                <element signature="e#17643#17644#0" expanded="true" />
                 <element signature="method#containAstNode#0;class#TransformPyAST#0" />
                 <element signature="method#addIntermediateNode#0;class#TransformPyAST#0" />
                 <element signature="method#addIdentifier#0;class#TransformPyAST#0" />
@@ -68,31 +60,7 @@
                 <element signature="method#findPyColumnNr#0;class#TransformPyAST#0" />
                 <element signature="method#getIndexOfOperator#0;class#TransformPyAST#0" />
                 <element signature="method#isInString#0;class#TransformPyAST#0" />
-                <element signature="e#29977#29978#0" expanded="true" />
-                <element signature="e#30034#30035#0" expanded="true" />
-                <element signature="e#30290#30291#0" expanded="true" />
-                <element signature="e#30347#30348#0" expanded="true" />
-                <element signature="e#30538#30539#0" expanded="true" />
-                <element signature="e#30602#30603#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="abriol_100.0.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample_output/abriol_100.0.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="18" column="24" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="abriol_100.0.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample_output/abriol_100.0.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-785">
-              <caret line="130" column="48" lean-forward="true" selection-start-line="130" selection-start-column="48" selection-end-line="130" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -127,16 +95,16 @@
         <option value="$PROJECT_DIR$/sample_input/sample1.py" />
         <option value="$PROJECT_DIR$/src/be/intimals/pythonConverter/Utils.java" />
         <option value="$PROJECT_DIR$/sample_output/sample3.py" />
-        <option value="$PROJECT_DIR$/src/be/intimals/pythonConverter/TransformPyAST.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/be/intimals/pythonConverter/TransformPyAST.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="181" />
+    <option name="x" value="643" />
     <option name="y" value="23" />
-    <option name="width" value="1409" />
-    <option name="height" value="985" />
+    <option name="width" value="1170" />
+    <option name="height" value="984" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -144,8 +112,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -179,6 +145,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -226,7 +194,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="181" y="23" width="1409" height="985" extended-state="0" />
+    <frame x="643" y="23" width="1170" height="984" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -237,12 +205,12 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4515766" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22522523" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2713964" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.27846673" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19531822" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2393617" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -287,18 +255,14 @@
             <element signature="method#increaseLineNr#0;class#TransformPyAST#0" />
             <element signature="method#collectLinesVariables#0;class#TransformPyAST#0" />
             <element signature="method#updateAttribute#0;class#TransformPyAST#0" />
-            <element signature="method#addInterNode#0;class#TransformPyAST#0" />
-            <element signature="method#changeNodeToAST#0;class#TransformPyAST#0" />
+            <element signature="method#changeToASTNode#0;class#TransformPyAST#0" />
             <element signature="method#addBlockStatements#0;class#TransformPyAST#0" />
             <element signature="method#treatRepeatedChildren#0;class#TransformPyAST#0" />
-            <element signature="method#treatCmpopNode#0;class#TransformPyAST#0" />
             <element signature="method#getRepeatedChildren#0;class#TransformPyAST#0" />
             <element signature="method#hasRepeatedChildren#0;class#TransformPyAST#0" />
             <element signature="method#moveAllChildren#0;class#TransformPyAST#0" />
             <element signature="method#moveAstNode#0;class#TransformPyAST#0" />
             <element signature="method#updateTextNode#0;class#TransformPyAST#0" />
-            <element signature="e#17578#17579#0" expanded="true" />
-            <element signature="e#17643#17644#0" expanded="true" />
             <element signature="method#containAstNode#0;class#TransformPyAST#0" />
             <element signature="method#addIntermediateNode#0;class#TransformPyAST#0" />
             <element signature="method#addIdentifier#0;class#TransformPyAST#0" />
@@ -307,12 +271,6 @@
             <element signature="method#findPyColumnNr#0;class#TransformPyAST#0" />
             <element signature="method#getIndexOfOperator#0;class#TransformPyAST#0" />
             <element signature="method#isInString#0;class#TransformPyAST#0" />
-            <element signature="e#29977#29978#0" expanded="true" />
-            <element signature="e#30034#30035#0" expanded="true" />
-            <element signature="e#30290#30291#0" expanded="true" />
-            <element signature="e#30347#30348#0" expanded="true" />
-            <element signature="e#30538#30539#0" expanded="true" />
-            <element signature="e#30602#30603#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -338,18 +296,14 @@
             <element signature="method#increaseLineNr#0;class#TransformPyAST#0" />
             <element signature="method#collectLinesVariables#0;class#TransformPyAST#0" />
             <element signature="method#updateAttribute#0;class#TransformPyAST#0" />
-            <element signature="method#addInterNode#0;class#TransformPyAST#0" />
-            <element signature="method#changeNodeToAST#0;class#TransformPyAST#0" />
+            <element signature="method#changeToASTNode#0;class#TransformPyAST#0" />
             <element signature="method#addBlockStatements#0;class#TransformPyAST#0" />
             <element signature="method#treatRepeatedChildren#0;class#TransformPyAST#0" />
-            <element signature="method#treatCmpopNode#0;class#TransformPyAST#0" />
             <element signature="method#getRepeatedChildren#0;class#TransformPyAST#0" />
             <element signature="method#hasRepeatedChildren#0;class#TransformPyAST#0" />
             <element signature="method#moveAllChildren#0;class#TransformPyAST#0" />
             <element signature="method#moveAstNode#0;class#TransformPyAST#0" />
             <element signature="method#updateTextNode#0;class#TransformPyAST#0" />
-            <element signature="e#17578#17579#0" expanded="true" />
-            <element signature="e#17643#17644#0" expanded="true" />
             <element signature="method#containAstNode#0;class#TransformPyAST#0" />
             <element signature="method#addIntermediateNode#0;class#TransformPyAST#0" />
             <element signature="method#addIdentifier#0;class#TransformPyAST#0" />
@@ -358,12 +312,6 @@
             <element signature="method#findPyColumnNr#0;class#TransformPyAST#0" />
             <element signature="method#getIndexOfOperator#0;class#TransformPyAST#0" />
             <element signature="method#isInString#0;class#TransformPyAST#0" />
-            <element signature="e#29977#29978#0" expanded="true" />
-            <element signature="e#30034#30035#0" expanded="true" />
-            <element signature="e#30290#30291#0" expanded="true" />
-            <element signature="e#30347#30348#0" expanded="true" />
-            <element signature="e#30538#30539#0" expanded="true" />
-            <element signature="e#30602#30603#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -389,18 +337,14 @@
             <element signature="method#increaseLineNr#0;class#TransformPyAST#0" />
             <element signature="method#collectLinesVariables#0;class#TransformPyAST#0" />
             <element signature="method#updateAttribute#0;class#TransformPyAST#0" />
-            <element signature="method#addInterNode#0;class#TransformPyAST#0" />
-            <element signature="method#changeNodeToAST#0;class#TransformPyAST#0" />
+            <element signature="method#changeToASTNode#0;class#TransformPyAST#0" />
             <element signature="method#addBlockStatements#0;class#TransformPyAST#0" />
             <element signature="method#treatRepeatedChildren#0;class#TransformPyAST#0" />
-            <element signature="method#treatCmpopNode#0;class#TransformPyAST#0" />
             <element signature="method#getRepeatedChildren#0;class#TransformPyAST#0" />
             <element signature="method#hasRepeatedChildren#0;class#TransformPyAST#0" />
             <element signature="method#moveAllChildren#0;class#TransformPyAST#0" />
             <element signature="method#moveAstNode#0;class#TransformPyAST#0" />
             <element signature="method#updateTextNode#0;class#TransformPyAST#0" />
-            <element signature="e#17578#17579#0" expanded="true" />
-            <element signature="e#17643#17644#0" expanded="true" />
             <element signature="method#containAstNode#0;class#TransformPyAST#0" />
             <element signature="method#addIntermediateNode#0;class#TransformPyAST#0" />
             <element signature="method#addIdentifier#0;class#TransformPyAST#0" />
@@ -409,12 +353,6 @@
             <element signature="method#findPyColumnNr#0;class#TransformPyAST#0" />
             <element signature="method#getIndexOfOperator#0;class#TransformPyAST#0" />
             <element signature="method#isInString#0;class#TransformPyAST#0" />
-            <element signature="e#29977#29978#0" expanded="true" />
-            <element signature="e#30034#30035#0" expanded="true" />
-            <element signature="e#30290#30291#0" expanded="true" />
-            <element signature="e#30347#30348#0" expanded="true" />
-            <element signature="e#30538#30539#0" expanded="true" />
-            <element signature="e#30602#30603#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -440,18 +378,14 @@
             <element signature="method#increaseLineNr#0;class#TransformPyAST#0" />
             <element signature="method#collectLinesVariables#0;class#TransformPyAST#0" />
             <element signature="method#updateAttribute#0;class#TransformPyAST#0" />
-            <element signature="method#addInterNode#0;class#TransformPyAST#0" />
-            <element signature="method#changeNodeToAST#0;class#TransformPyAST#0" />
+            <element signature="method#changeToASTNode#0;class#TransformPyAST#0" />
             <element signature="method#addBlockStatements#0;class#TransformPyAST#0" />
             <element signature="method#treatRepeatedChildren#0;class#TransformPyAST#0" />
-            <element signature="method#treatCmpopNode#0;class#TransformPyAST#0" />
             <element signature="method#getRepeatedChildren#0;class#TransformPyAST#0" />
             <element signature="method#hasRepeatedChildren#0;class#TransformPyAST#0" />
             <element signature="method#moveAllChildren#0;class#TransformPyAST#0" />
             <element signature="method#moveAstNode#0;class#TransformPyAST#0" />
             <element signature="method#updateTextNode#0;class#TransformPyAST#0" />
-            <element signature="e#17578#17579#0" expanded="true" />
-            <element signature="e#17643#17644#0" expanded="true" />
             <element signature="method#containAstNode#0;class#TransformPyAST#0" />
             <element signature="method#addIntermediateNode#0;class#TransformPyAST#0" />
             <element signature="method#addIdentifier#0;class#TransformPyAST#0" />
@@ -460,12 +394,6 @@
             <element signature="method#findPyColumnNr#0;class#TransformPyAST#0" />
             <element signature="method#getIndexOfOperator#0;class#TransformPyAST#0" />
             <element signature="method#isInString#0;class#TransformPyAST#0" />
-            <element signature="e#29977#29978#0" expanded="true" />
-            <element signature="e#30034#30035#0" expanded="true" />
-            <element signature="e#30290#30291#0" expanded="true" />
-            <element signature="e#30347#30348#0" expanded="true" />
-            <element signature="e#30538#30539#0" expanded="true" />
-            <element signature="e#30602#30603#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -491,18 +419,14 @@
             <element signature="method#increaseLineNr#0;class#TransformPyAST#0" />
             <element signature="method#collectLinesVariables#0;class#TransformPyAST#0" />
             <element signature="method#updateAttribute#0;class#TransformPyAST#0" />
-            <element signature="method#addInterNode#0;class#TransformPyAST#0" />
-            <element signature="method#changeNodeToAST#0;class#TransformPyAST#0" />
+            <element signature="method#changeToASTNode#0;class#TransformPyAST#0" />
             <element signature="method#addBlockStatements#0;class#TransformPyAST#0" />
             <element signature="method#treatRepeatedChildren#0;class#TransformPyAST#0" />
-            <element signature="method#treatCmpopNode#0;class#TransformPyAST#0" />
             <element signature="method#getRepeatedChildren#0;class#TransformPyAST#0" />
             <element signature="method#hasRepeatedChildren#0;class#TransformPyAST#0" />
             <element signature="method#moveAllChildren#0;class#TransformPyAST#0" />
             <element signature="method#moveAstNode#0;class#TransformPyAST#0" />
             <element signature="method#updateTextNode#0;class#TransformPyAST#0" />
-            <element signature="e#17578#17579#0" expanded="true" />
-            <element signature="e#17643#17644#0" expanded="true" />
             <element signature="method#containAstNode#0;class#TransformPyAST#0" />
             <element signature="method#addIntermediateNode#0;class#TransformPyAST#0" />
             <element signature="method#addIdentifier#0;class#TransformPyAST#0" />
@@ -511,12 +435,6 @@
             <element signature="method#findPyColumnNr#0;class#TransformPyAST#0" />
             <element signature="method#getIndexOfOperator#0;class#TransformPyAST#0" />
             <element signature="method#isInString#0;class#TransformPyAST#0" />
-            <element signature="e#29977#29978#0" expanded="true" />
-            <element signature="e#30034#30035#0" expanded="true" />
-            <element signature="e#30290#30291#0" expanded="true" />
-            <element signature="e#30347#30348#0" expanded="true" />
-            <element signature="e#30538#30539#0" expanded="true" />
-            <element signature="e#30602#30603#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -560,18 +478,14 @@
             <element signature="method#increaseLineNr#0;class#TransformPyAST#0" />
             <element signature="method#collectLinesVariables#0;class#TransformPyAST#0" />
             <element signature="method#updateAttribute#0;class#TransformPyAST#0" />
-            <element signature="method#addInterNode#0;class#TransformPyAST#0" />
-            <element signature="method#changeNodeToAST#0;class#TransformPyAST#0" />
+            <element signature="method#changeToASTNode#0;class#TransformPyAST#0" />
             <element signature="method#addBlockStatements#0;class#TransformPyAST#0" />
             <element signature="method#treatRepeatedChildren#0;class#TransformPyAST#0" />
-            <element signature="method#treatCmpopNode#0;class#TransformPyAST#0" />
             <element signature="method#getRepeatedChildren#0;class#TransformPyAST#0" />
             <element signature="method#hasRepeatedChildren#0;class#TransformPyAST#0" />
             <element signature="method#moveAllChildren#0;class#TransformPyAST#0" />
             <element signature="method#moveAstNode#0;class#TransformPyAST#0" />
             <element signature="method#updateTextNode#0;class#TransformPyAST#0" />
-            <element signature="e#17578#17579#0" expanded="true" />
-            <element signature="e#17643#17644#0" expanded="true" />
             <element signature="method#containAstNode#0;class#TransformPyAST#0" />
             <element signature="method#addIntermediateNode#0;class#TransformPyAST#0" />
             <element signature="method#addIdentifier#0;class#TransformPyAST#0" />
@@ -580,12 +494,6 @@
             <element signature="method#findPyColumnNr#0;class#TransformPyAST#0" />
             <element signature="method#getIndexOfOperator#0;class#TransformPyAST#0" />
             <element signature="method#isInString#0;class#TransformPyAST#0" />
-            <element signature="e#29977#29978#0" expanded="true" />
-            <element signature="e#30034#30035#0" expanded="true" />
-            <element signature="e#30290#30291#0" expanded="true" />
-            <element signature="e#30347#30348#0" expanded="true" />
-            <element signature="e#30538#30539#0" expanded="true" />
-            <element signature="e#30602#30603#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -636,18 +544,14 @@
             <element signature="method#increaseLineNr#0;class#TransformPyAST#0" />
             <element signature="method#collectLinesVariables#0;class#TransformPyAST#0" />
             <element signature="method#updateAttribute#0;class#TransformPyAST#0" />
-            <element signature="method#addInterNode#0;class#TransformPyAST#0" />
-            <element signature="method#changeNodeToAST#0;class#TransformPyAST#0" />
+            <element signature="method#changeToASTNode#0;class#TransformPyAST#0" />
             <element signature="method#addBlockStatements#0;class#TransformPyAST#0" />
             <element signature="method#treatRepeatedChildren#0;class#TransformPyAST#0" />
-            <element signature="method#treatCmpopNode#0;class#TransformPyAST#0" />
             <element signature="method#getRepeatedChildren#0;class#TransformPyAST#0" />
             <element signature="method#hasRepeatedChildren#0;class#TransformPyAST#0" />
             <element signature="method#moveAllChildren#0;class#TransformPyAST#0" />
             <element signature="method#moveAstNode#0;class#TransformPyAST#0" />
             <element signature="method#updateTextNode#0;class#TransformPyAST#0" />
-            <element signature="e#17578#17579#0" expanded="true" />
-            <element signature="e#17643#17644#0" expanded="true" />
             <element signature="method#containAstNode#0;class#TransformPyAST#0" />
             <element signature="method#addIntermediateNode#0;class#TransformPyAST#0" />
             <element signature="method#addIdentifier#0;class#TransformPyAST#0" />
@@ -656,12 +560,6 @@
             <element signature="method#findPyColumnNr#0;class#TransformPyAST#0" />
             <element signature="method#getIndexOfOperator#0;class#TransformPyAST#0" />
             <element signature="method#isInString#0;class#TransformPyAST#0" />
-            <element signature="e#29977#29978#0" expanded="true" />
-            <element signature="e#30034#30035#0" expanded="true" />
-            <element signature="e#30290#30291#0" expanded="true" />
-            <element signature="e#30347#30348#0" expanded="true" />
-            <element signature="e#30538#30539#0" expanded="true" />
-            <element signature="e#30602#30603#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -723,18 +621,14 @@
             <element signature="method#increaseLineNr#0;class#TransformPyAST#0" />
             <element signature="method#collectLinesVariables#0;class#TransformPyAST#0" />
             <element signature="method#updateAttribute#0;class#TransformPyAST#0" />
-            <element signature="method#addInterNode#0;class#TransformPyAST#0" />
-            <element signature="method#changeNodeToAST#0;class#TransformPyAST#0" />
+            <element signature="method#changeToASTNode#0;class#TransformPyAST#0" />
             <element signature="method#addBlockStatements#0;class#TransformPyAST#0" />
             <element signature="method#treatRepeatedChildren#0;class#TransformPyAST#0" />
-            <element signature="method#treatCmpopNode#0;class#TransformPyAST#0" />
             <element signature="method#getRepeatedChildren#0;class#TransformPyAST#0" />
             <element signature="method#hasRepeatedChildren#0;class#TransformPyAST#0" />
             <element signature="method#moveAllChildren#0;class#TransformPyAST#0" />
             <element signature="method#moveAstNode#0;class#TransformPyAST#0" />
             <element signature="method#updateTextNode#0;class#TransformPyAST#0" />
-            <element signature="e#17578#17579#0" expanded="true" />
-            <element signature="e#17643#17644#0" expanded="true" />
             <element signature="method#containAstNode#0;class#TransformPyAST#0" />
             <element signature="method#addIntermediateNode#0;class#TransformPyAST#0" />
             <element signature="method#addIdentifier#0;class#TransformPyAST#0" />
@@ -743,12 +637,6 @@
             <element signature="method#findPyColumnNr#0;class#TransformPyAST#0" />
             <element signature="method#getIndexOfOperator#0;class#TransformPyAST#0" />
             <element signature="method#isInString#0;class#TransformPyAST#0" />
-            <element signature="e#29977#29978#0" expanded="true" />
-            <element signature="e#30034#30035#0" expanded="true" />
-            <element signature="e#30290#30291#0" expanded="true" />
-            <element signature="e#30347#30348#0" expanded="true" />
-            <element signature="e#30538#30539#0" expanded="true" />
-            <element signature="e#30602#30603#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -774,18 +662,14 @@
             <element signature="method#increaseLineNr#0;class#TransformPyAST#0" />
             <element signature="method#collectLinesVariables#0;class#TransformPyAST#0" />
             <element signature="method#updateAttribute#0;class#TransformPyAST#0" />
-            <element signature="method#addInterNode#0;class#TransformPyAST#0" />
-            <element signature="method#changeNodeToAST#0;class#TransformPyAST#0" />
+            <element signature="method#changeToASTNode#0;class#TransformPyAST#0" />
             <element signature="method#addBlockStatements#0;class#TransformPyAST#0" />
             <element signature="method#treatRepeatedChildren#0;class#TransformPyAST#0" />
-            <element signature="method#treatCmpopNode#0;class#TransformPyAST#0" />
             <element signature="method#getRepeatedChildren#0;class#TransformPyAST#0" />
             <element signature="method#hasRepeatedChildren#0;class#TransformPyAST#0" />
             <element signature="method#moveAllChildren#0;class#TransformPyAST#0" />
             <element signature="method#moveAstNode#0;class#TransformPyAST#0" />
             <element signature="method#updateTextNode#0;class#TransformPyAST#0" />
-            <element signature="e#17578#17579#0" expanded="true" />
-            <element signature="e#17643#17644#0" expanded="true" />
             <element signature="method#containAstNode#0;class#TransformPyAST#0" />
             <element signature="method#addIntermediateNode#0;class#TransformPyAST#0" />
             <element signature="method#addIdentifier#0;class#TransformPyAST#0" />
@@ -794,12 +678,6 @@
             <element signature="method#findPyColumnNr#0;class#TransformPyAST#0" />
             <element signature="method#getIndexOfOperator#0;class#TransformPyAST#0" />
             <element signature="method#isInString#0;class#TransformPyAST#0" />
-            <element signature="e#29977#29978#0" expanded="true" />
-            <element signature="e#30034#30035#0" expanded="true" />
-            <element signature="e#30290#30291#0" expanded="true" />
-            <element signature="e#30347#30348#0" expanded="true" />
-            <element signature="e#30538#30539#0" expanded="true" />
-            <element signature="e#30602#30603#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -936,27 +814,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample_input/abriol_100.0.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample_output/abriol_100.0.py">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="24" />
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-start-column="2" selection-end-line="15" selection-end-column="36" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample_input/abriol_100.0.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sample_output/abriol_100.0.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-785">
-          <caret line="130" column="48" lean-forward="true" selection-start-line="130" selection-start-column="48" selection-end-line="130" selection-end-column="48" />
+        <state relative-caret-position="15">
+          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample_output/abriol_100.0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/be/intimals/pythonConverter/TransformPyAST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        <state relative-caret-position="581">
+          <caret line="301" column="24" selection-start-line="301" selection-start-column="24" selection-end-line="301" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#transformPyAST#0;class#TransformPyAST#0" />
@@ -964,18 +856,14 @@
             <element signature="method#increaseLineNr#0;class#TransformPyAST#0" />
             <element signature="method#collectLinesVariables#0;class#TransformPyAST#0" />
             <element signature="method#updateAttribute#0;class#TransformPyAST#0" />
-            <element signature="method#addInterNode#0;class#TransformPyAST#0" />
-            <element signature="method#changeNodeToAST#0;class#TransformPyAST#0" />
+            <element signature="method#changeToASTNode#0;class#TransformPyAST#0" />
             <element signature="method#addBlockStatements#0;class#TransformPyAST#0" />
             <element signature="method#treatRepeatedChildren#0;class#TransformPyAST#0" />
-            <element signature="method#treatCmpopNode#0;class#TransformPyAST#0" />
             <element signature="method#getRepeatedChildren#0;class#TransformPyAST#0" />
             <element signature="method#hasRepeatedChildren#0;class#TransformPyAST#0" />
             <element signature="method#moveAllChildren#0;class#TransformPyAST#0" />
             <element signature="method#moveAstNode#0;class#TransformPyAST#0" />
             <element signature="method#updateTextNode#0;class#TransformPyAST#0" />
-            <element signature="e#17578#17579#0" expanded="true" />
-            <element signature="e#17643#17644#0" expanded="true" />
             <element signature="method#containAstNode#0;class#TransformPyAST#0" />
             <element signature="method#addIntermediateNode#0;class#TransformPyAST#0" />
             <element signature="method#addIdentifier#0;class#TransformPyAST#0" />
@@ -984,22 +872,6 @@
             <element signature="method#findPyColumnNr#0;class#TransformPyAST#0" />
             <element signature="method#getIndexOfOperator#0;class#TransformPyAST#0" />
             <element signature="method#isInString#0;class#TransformPyAST#0" />
-            <element signature="e#29977#29978#0" expanded="true" />
-            <element signature="e#30034#30035#0" expanded="true" />
-            <element signature="e#30290#30291#0" expanded="true" />
-            <element signature="e#30347#30348#0" expanded="true" />
-            <element signature="e#30538#30539#0" expanded="true" />
-            <element signature="e#30602#30603#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" selection-start-line="13" selection-start-column="2" selection-end-line="15" selection-end-column="36" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>

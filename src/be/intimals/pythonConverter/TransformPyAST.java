@@ -132,7 +132,7 @@ public class TransformPyAST {
                 }else{
                     //case 1
                     if(isAstNode(node) && containAstNode(node)){
-                        addInterNode(node, "interNode");
+                        addInterNode(node);
                     }else{
                         //case 2
                         if(isAstNode(node) && hasRepeatedChildren(node)){
@@ -265,9 +265,13 @@ public class TransformPyAST {
     /**
      * update an internal node
      * @param node : node
-     * @param tagName :
      */
-    private void addInterNode(Node node, String tagName) {
+    private void addInterNode(Node node) {
+
+        if(node.getNodeName().equals("BinOp"))
+            changeNameForBinOp(node);
+
+        String tagName = "list"+node.getNodeName();
         //add intermediate node
         addIntermediateNode(node, tagName);
 
@@ -286,6 +290,19 @@ public class TransformPyAST {
                 updateNodes(interChildren.item(i));
             }
         }
+    }
+
+    private void changeNameForBinOp(Node node){
+        NodeList nodeList = node.getChildNodes();
+        int count=0;
+        for(int i=0; i<nodeList.getLength(); ++i){
+            if(nodeList.item(i).getNodeType() == Node.ELEMENT_NODE){
+                String nodeName = "Op"+(count+1);
+                document.renameNode(nodeList.item(i),null,nodeName);
+                ++count;
+            }
+        }
+
     }
 
     private void changeNodeToAST(Node node){
