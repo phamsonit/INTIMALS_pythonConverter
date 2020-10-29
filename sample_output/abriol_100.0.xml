@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SourceFile FullName="/Users/user/Working/INTIMALS/softs/tree-miner/pythonConverter/sample_input/abriol_100.0.py" Language="Python">
+  <Module ColNr="1" EndColNr="68" EndLineNr="36" ID="0" LineNr="1">
+    <listModule ColNr="1" EndColNr="68" EndLineNr="36" ID="1" LineNr="1">
+      <FunctionDef ColNr="1" EndColNr="68" EndLineNr="35" ID="2" LineNr="1" name="load">
+        <nameDef ColNr="5" EndColNr="8" EndLineNr="1" ID="3" LineNr="1" name="load">
+          <Name ColNr="5" EndColNr="8" EndLineNr="1" ID="4" LineNr="1">
+            <identifier ColNr="5" EndColNr="8" EndLineNr="1" ID="5" LineNr="1">load</identifier>
+          </Name>
+        </nameDef>
+        <arguments ColNr="0" EndColNr="23" EndLineNr="1" ID="6" LineNr="1">
+          <Arg ColNr="10" EndColNr="17" EndLineNr="1" ID="7" LineNr="1" name="filename">
+            <identifier ColNr="10" EndColNr="17" EndLineNr="1" ID="8" LineNr="1">filename</identifier>
+          </Arg>
+          <Arg ColNr="20" EndColNr="30" EndLineNr="1" ID="9" LineNr="1" name="dictionnary">
+            <identifier ColNr="20" EndColNr="30" EndLineNr="1" ID="10" LineNr="1">dictionnary</identifier>
+          </Arg>
+        </arguments>
+        <body ColNr="1" EndColNr="68" EndLineNr="35" ID="11" LineNr="2">
+          <Block ColNr="1" EndColNr="68" EndLineNr="35" ID="12" LineNr="2">
+            <statements ColNr="1" EndColNr="68" EndLineNr="35" ID="13" LineNr="2">
+              <Expr ColNr="1" EndColNr="7" EndLineNr="13" ID="14" LineNr="2">
+                <listExpr ColNr="1" EndColNr="7" EndLineNr="13" ID="15" LineNr="2">
+                  <Str ColNr="1" EndColNr="7" EndLineNr="13" ID="16" LineNr="2">
+                    <s ColNr="1" EndColNr="7" EndLineNr="13" ID="17" LineNr="2">"""@pre    filename est le nom d'un fichier de texte,dictionnary est un dictionnaire avec :comme clés : des chaînes de caractères (les noms d'utilisateurs)comme valeurs : des entiers (un code pin associé à l'utilisateur)@post   Met à jour le dictionnaire à partir des clients repris dans le fichier de nom filename.Si une erreur se produit pendant la lecture du fichier, le dictionnaire n'est pasmodifié.Retourne :True     si le fichier a été lu sans erreursFalse    sinon"""</s>
+                  </Str>
+                </listExpr>
+              </Expr>
+              <Try ColNr="1" EndColNr="8" EndLineNr="35" ID="18" LineNr="14">
+                <body ColNr="1" EndColNr="8" EndLineNr="35" ID="19" LineNr="15">
+                  <Block ColNr="1" EndColNr="8" EndLineNr="35" ID="20" LineNr="15">
+                    <statements ColNr="1" EndColNr="8" EndLineNr="35" ID="21" LineNr="15">
+                      <With ColNr="1" EndColNr="36" EndLineNr="33" ID="22" LineNr="15">
+                        <items ColNr="14" EndColNr="35" EndLineNr="15" ID="23" LineNr="15">
+                          <Withitem ColNr="14" EndColNr="35" EndLineNr="15" ID="24" LineNr="15">
+                            <listWithitem ColNr="14" EndColNr="35" EndLineNr="15" ID="25" LineNr="15">
+                              <Call ColNr="14" EndColNr="27" EndLineNr="15" ID="26" LineNr="15">
+                                <func ColNr="14" EndColNr="17" EndLineNr="15" ID="27" LineNr="15">
+                                  <Name ColNr="14" EndColNr="17" EndLineNr="15" ID="28" LineNr="15" ctx="Load" name="open">
+                                    <identifier ColNr="14" EndColNr="17" EndLineNr="15" ID="29" LineNr="15">open</identifier>
+                                  </Name>
+                                </func>
+                                <args ColNr="19" EndColNr="26" EndLineNr="15" ID="30" LineNr="15">
+                                  <Name ColNr="19" EndColNr="26" EndLineNr="15" ID="31" LineNr="15" ctx="Load" name="filename">
+                                    <identifier ColNr="19" EndColNr="26" EndLineNr="15" ID="32" LineNr="15">filename</identifier>
+                                  </Name>
+                                </args>
+                              </Call>
+                              <Name ColNr="32" EndColNr="35" EndLineNr="15" ID="33" LineNr="15" ctx="Store" name="file">
+                                <identifier ColNr="32" EndColNr="35" EndLineNr="15" ID="34" LineNr="15">file</identifier>
+                              </Name>
+                            </listWithitem>
+                          </Withitem>
+                        </items>
+                        <body ColNr="1" EndColNr="36" EndLineNr="33" ID="35" LineNr="16">
+                          <Block ColNr="1" EndColNr="36" EndLineNr="33" ID="36" LineNr="16">
+                            <statements ColNr="1" EndColNr="36" EndLineNr="33" ID="37" LineNr="16">
+                              <Assign ColNr="13" EndColNr="20" EndLineNr="16" ID="38" LineNr="16">
+                                <listAssign ColNr="13" EndColNr="20" EndLineNr="16" ID="39" LineNr="16">
+                                  <Targets ColNr="13" EndColNr="18" EndLineNr="16" ID="40" LineNr="16">
+                                    <listTargets ColNr="13" EndColNr="18" EndLineNr="16" ID="41" LineNr="16">
+                                      <Name ColNr="13" EndColNr="17" EndLineNr="16" ID="42" LineNr="16" ctx="Store" name="ready">
+                                        <identifier ColNr="13" EndColNr="17" EndLineNr="16" ID="43" LineNr="16">ready</identifier>
+                                      </Name>
+                                    </listTargets>
+                                  </Targets>
+                                  <List ColNr="19" EndColNr="20" EndLineNr="16" ID="44" LineNr="16" ctx="Load">
+                                    <identifier ColNr="19" EndColNr="20" EndLineNr="16" ID="45" LineNr="16">[]</identifier>
+                                  </List>
+                                </listAssign>
+                              </Assign>
+                              <For ColNr="1" EndColNr="29" EndLineNr="30" ID="46" LineNr="17">
+                                <target ColNr="17" EndColNr="20" EndLineNr="17" ID="47" LineNr="17">
+                                  <Name ColNr="17" EndColNr="20" EndLineNr="17" ID="48" LineNr="17" ctx="Store" name="line">
+                                    <identifier ColNr="17" EndColNr="20" EndLineNr="17" ID="49" LineNr="17">line</identifier>
+                                  </Name>
+                                </target>
+                                <iter ColNr="25" EndColNr="28" EndLineNr="17" ID="50" LineNr="17">
+                                  <Name ColNr="25" EndColNr="28" EndLineNr="17" ID="51" LineNr="17" ctx="Load" name="file">
+                                    <identifier ColNr="25" EndColNr="28" EndLineNr="17" ID="52" LineNr="17">file</identifier>
+                                  </Name>
+                                </iter>
+                                <body ColNr="1" EndColNr="29" EndLineNr="30" ID="53" LineNr="18">
+                                  <Block ColNr="1" EndColNr="29" EndLineNr="30" ID="54" LineNr="18">
+                                    <statements ColNr="1" EndColNr="29" EndLineNr="30" ID="55" LineNr="18">
+                                      <Assign ColNr="17" EndColNr="37" EndLineNr="18" ID="56" LineNr="18">
+                                        <listAssign ColNr="17" EndColNr="37" EndLineNr="18" ID="57" LineNr="18">
+                                          <Targets ColNr="0" EndColNr="8" EndLineNr="18" ID="58" LineNr="18">
+                                            <listTargets ColNr="0" EndColNr="8" EndLineNr="18" ID="59" LineNr="18">
+                                              <Name ColNr="17" EndColNr="24" EndLineNr="18" ID="60" LineNr="18" ctx="Store" name="stripped">
+                                                <identifier ColNr="17" EndColNr="24" EndLineNr="18" ID="61" LineNr="18">stripped</identifier>
+                                              </Name>
+                                            </listTargets>
+                                          </Targets>
+                                          <Call ColNr="26" EndColNr="37" EndLineNr="18" ID="62" LineNr="18">
+                                            <func ColNr="26" EndColNr="35" EndLineNr="18" ID="63" LineNr="18">
+                                              <Attribute ColNr="26" EndColNr="35" EndLineNr="18" ID="64" LineNr="18" ctx="Load">
+                                                <value ColNr="26" EndColNr="29" EndLineNr="18" ID="65" LineNr="18">
+                                                  <Name ColNr="26" EndColNr="29" EndLineNr="18" ID="66" LineNr="18" ctx="Load" name="line">
+                                                    <identifier ColNr="26" EndColNr="29" EndLineNr="18" ID="67" LineNr="18">line</identifier>
+                                                  </Name>
+                                                </value>
+                                                <attr ColNr="31" EndColNr="35" EndLineNr="18" ID="68" LineNr="18">
+                                                  <Name ColNr="31" EndColNr="35" EndLineNr="18" ID="69" LineNr="18">
+                                                    <identifier ColNr="31" EndColNr="35" EndLineNr="18" ID="70" LineNr="18">strip</identifier>
+                                                  </Name>
+                                                </attr>
+                                              </Attribute>
+                                            </func>
+                                          </Call>
+                                        </listAssign>
+                                      </Assign>
+                                      <Assign ColNr="17" EndColNr="44" EndLineNr="19" ID="71" LineNr="19">
+                                        <listAssign ColNr="17" EndColNr="44" EndLineNr="19" ID="72" LineNr="19">
+                                          <Targets ColNr="0" EndColNr="8" EndLineNr="19" ID="73" LineNr="19">
+                                            <listTargets ColNr="0" EndColNr="8" EndLineNr="19" ID="74" LineNr="19">
+                                              <Name ColNr="17" EndColNr="24" EndLineNr="19" ID="75" LineNr="19" ctx="Store" name="splitted">
+                                                <identifier ColNr="17" EndColNr="24" EndLineNr="19" ID="76" LineNr="19">splitted</identifier>
+                                              </Name>
+                                            </listTargets>
+                                          </Targets>
+                                          <Call ColNr="26" EndColNr="44" EndLineNr="19" ID="77" LineNr="19">
+                                            <func ColNr="26" EndColNr="39" EndLineNr="19" ID="78" LineNr="19">
+                                              <Attribute ColNr="26" EndColNr="39" EndLineNr="19" ID="79" LineNr="19" ctx="Load">
+                                                <value ColNr="26" EndColNr="33" EndLineNr="19" ID="80" LineNr="19">
+                                                  <Name ColNr="26" EndColNr="33" EndLineNr="19" ID="81" LineNr="19" ctx="Load" name="stripped">
+                                                    <identifier ColNr="26" EndColNr="33" EndLineNr="19" ID="82" LineNr="19">stripped</identifier>
+                                                  </Name>
+                                                </value>
+                                                <attr ColNr="35" EndColNr="39" EndLineNr="19" ID="83" LineNr="19">
+                                                  <Name ColNr="35" EndColNr="39" EndLineNr="19" ID="84" LineNr="19">
+                                                    <identifier ColNr="35" EndColNr="39" EndLineNr="19" ID="85" LineNr="19">split</identifier>
+                                                  </Name>
+                                                </attr>
+                                              </Attribute>
+                                            </func>
+                                            <args ColNr="41" EndColNr="43" EndLineNr="19" ID="86" LineNr="19">
+                                              <Str ColNr="41" EndColNr="43" EndLineNr="19" ID="87" LineNr="19">
+                                                <s ColNr="41" EndColNr="43" EndLineNr="19" ID="88" LineNr="19">"!"</s>
+                                              </Str>
+                                            </args>
+                                          </Call>
+                                        </listAssign>
+                                      </Assign>
+                                      <Expr ColNr="17" EndColNr="38" EndLineNr="20" ID="89" LineNr="20">
+                                        <listExpr ColNr="17" EndColNr="38" EndLineNr="20" ID="90" LineNr="20">
+                                          <Call ColNr="17" EndColNr="38" EndLineNr="20" ID="91" LineNr="20">
+                                            <func ColNr="17" EndColNr="28" EndLineNr="20" ID="92" LineNr="20">
+                                              <Attribute ColNr="17" EndColNr="28" EndLineNr="20" ID="93" LineNr="20" ctx="Load">
+                                                <value ColNr="17" EndColNr="21" EndLineNr="20" ID="94" LineNr="20">
+                                                  <Name ColNr="17" EndColNr="21" EndLineNr="20" ID="95" LineNr="20" ctx="Load" name="ready">
+                                                    <identifier ColNr="17" EndColNr="21" EndLineNr="20" ID="96" LineNr="20">ready</identifier>
+                                                  </Name>
+                                                </value>
+                                                <attr ColNr="23" EndColNr="28" EndLineNr="20" ID="97" LineNr="20">
+                                                  <Name ColNr="23" EndColNr="28" EndLineNr="20" ID="98" LineNr="20">
+                                                    <identifier ColNr="23" EndColNr="28" EndLineNr="20" ID="99" LineNr="20">append</identifier>
+                                                  </Name>
+                                                </attr>
+                                              </Attribute>
+                                            </func>
+                                            <args ColNr="30" EndColNr="37" EndLineNr="20" ID="100" LineNr="20">
+                                              <Name ColNr="30" EndColNr="37" EndLineNr="20" ID="101" LineNr="20" ctx="Load" name="splitted">
+                                                <identifier ColNr="30" EndColNr="37" EndLineNr="20" ID="102" LineNr="20">splitted</identifier>
+                                              </Name>
+                                            </args>
+                                          </Call>
+                                        </listExpr>
+                                      </Expr>
+                                      <If ColNr="1" EndColNr="36" EndLineNr="22" ID="103" LineNr="21">
+                                        <test ColNr="20" EndColNr="35" EndLineNr="21" ID="104" LineNr="21">
+                                          <Compare ColNr="20" EndColNr="35" EndLineNr="21" ID="105" LineNr="21">
+                                            <value1 ColNr="20" EndColNr="32" EndLineNr="21" ID="106" LineNr="21">
+                                              <Call ColNr="20" EndColNr="32" EndLineNr="21" ID="107" LineNr="21">
+                                                <func ColNr="20" EndColNr="22" EndLineNr="21" ID="108" LineNr="21">
+                                                  <Name ColNr="20" EndColNr="22" EndLineNr="21" ID="109" LineNr="21" ctx="Load" name="len">
+                                                    <identifier ColNr="20" EndColNr="22" EndLineNr="21" ID="110" LineNr="21">len</identifier>
+                                                  </Name>
+                                                </func>
+                                                <args ColNr="24" EndColNr="31" EndLineNr="21" ID="111" LineNr="21">
+                                                  <Name ColNr="24" EndColNr="31" EndLineNr="21" ID="112" LineNr="21" ctx="Load" name="splitted">
+                                                    <identifier ColNr="24" EndColNr="31" EndLineNr="21" ID="113" LineNr="21">splitted</identifier>
+                                                  </Name>
+                                                </args>
+                                              </Call>
+                                            </value1>
+                                            <cmpop ColNr="33" EndColNr="34" EndLineNr="21" ID="114" LineNr="21">
+                                              <Name ColNr="33" EndColNr="34" EndLineNr="21" ID="115" LineNr="21">
+                                                <identifier ColNr="33" EndColNr="34" EndLineNr="21" ID="116" LineNr="21">!=</identifier>
+                                              </Name>
+                                            </cmpop>
+                                            <value2 ColNr="35" EndColNr="35" EndLineNr="21" ID="117" LineNr="21">
+                                              <Num ColNr="35" EndColNr="35" EndLineNr="21" ID="118" LineNr="21">
+                                                <identifier ColNr="35" EndColNr="35" EndLineNr="21" ID="119" LineNr="21">2</identifier>
+                                              </Num>
+                                            </value2>
+                                          </Compare>
+                                        </test>
+                                        <body ColNr="1" EndColNr="12" EndLineNr="22" ID="120" LineNr="22">
+                                          <Block ColNr="1" EndColNr="12" EndLineNr="22" ID="121" LineNr="22">
+                                            <statements ColNr="1" EndColNr="12" EndLineNr="22" ID="122" LineNr="22">
+                                              <Return ColNr="21" EndColNr="32" EndLineNr="22" ID="123" LineNr="22">
+                                                <listReturn ColNr="21" EndColNr="32" EndLineNr="22" ID="124" LineNr="22">
+                                                  <NameConstant ColNr="28" EndColNr="32" EndLineNr="22" ID="125" LineNr="22">
+                                                    <identifier ColNr="28" EndColNr="32" EndLineNr="22" ID="126" LineNr="22">False</identifier>
+                                                  </NameConstant>
+                                                </listReturn>
+                                              </Return>
+                                            </statements>
+                                          </Block>
+                                        </body>
+                                      </If>
+                                      <If ColNr="1" EndColNr="39" EndLineNr="24" ID="127" LineNr="23">
+                                        <test ColNr="20" EndColNr="38" EndLineNr="23" ID="128" LineNr="23">
+                                          <Compare ColNr="20" EndColNr="38" EndLineNr="23" ID="129" LineNr="23">
+                                            <value1 ColNr="20" EndColNr="35" EndLineNr="23" ID="130" LineNr="23">
+                                              <Call ColNr="20" EndColNr="35" EndLineNr="23" ID="131" LineNr="23">
+                                                <func ColNr="20" EndColNr="22" EndLineNr="23" ID="132" LineNr="23">
+                                                  <Name ColNr="20" EndColNr="22" EndLineNr="23" ID="133" LineNr="23" ctx="Load" name="len">
+                                                    <identifier ColNr="20" EndColNr="22" EndLineNr="23" ID="134" LineNr="23">len</identifier>
+                                                  </Name>
+                                                </func>
+                                                <args ColNr="24" EndColNr="34" EndLineNr="23" ID="135" LineNr="23">
+                                                  <Subscript ColNr="24" EndColNr="34" EndLineNr="23" ID="136" LineNr="23" ctx="Load">
+                                                    <value ColNr="24" EndColNr="31" EndLineNr="23" ID="137" LineNr="23">
+                                                      <Name ColNr="24" EndColNr="31" EndLineNr="23" ID="138" LineNr="23" ctx="Load" name="splitted">
+                                                        <identifier ColNr="24" EndColNr="31" EndLineNr="23" ID="139" LineNr="23">splitted</identifier>
+                                                      </Name>
+                                                    </value>
+                                                    <slice ColNr="0" EndColNr="2" EndLineNr="23" ID="140" LineNr="23">
+                                                      <Index ColNr="33" EndColNr="33" EndLineNr="23" ID="141" LineNr="23">
+                                                        <listIndex ColNr="33" EndColNr="33" EndLineNr="23" ID="142" LineNr="23">
+                                                          <Num ColNr="33" EndColNr="33" EndLineNr="23" ID="143" LineNr="23">
+                                                            <identifier ColNr="33" EndColNr="33" EndLineNr="23" ID="144" LineNr="23">1</identifier>
+                                                          </Num>
+                                                        </listIndex>
+                                                      </Index>
+                                                    </slice>
+                                                  </Subscript>
+                                                </args>
+                                              </Call>
+                                            </value1>
+                                            <cmpop ColNr="36" EndColNr="37" EndLineNr="23" ID="145" LineNr="23">
+                                              <Name ColNr="36" EndColNr="37" EndLineNr="23" ID="146" LineNr="23">
+                                                <identifier ColNr="36" EndColNr="37" EndLineNr="23" ID="147" LineNr="23">!=</identifier>
+                                              </Name>
+                                            </cmpop>
+                                            <value2 ColNr="38" EndColNr="38" EndLineNr="23" ID="148" LineNr="23">
+                                              <Num ColNr="38" EndColNr="38" EndLineNr="23" ID="149" LineNr="23">
+                                                <identifier ColNr="38" EndColNr="38" EndLineNr="23" ID="150" LineNr="23">4</identifier>
+                                              </Num>
+                                            </value2>
+                                          </Compare>
+                                        </test>
+                                        <body ColNr="1" EndColNr="12" EndLineNr="24" ID="151" LineNr="24">
+                                          <Block ColNr="1" EndColNr="12" EndLineNr="24" ID="152" LineNr="24">
+                                            <statements ColNr="1" EndColNr="12" EndLineNr="24" ID="153" LineNr="24">
+                                              <Return ColNr="21" EndColNr="32" EndLineNr="24" ID="154" LineNr="24">
+                                                <listReturn ColNr="21" EndColNr="32" EndLineNr="24" ID="155" LineNr="24">
+                                                  <NameConstant ColNr="28" EndColNr="32" EndLineNr="24" ID="156" LineNr="24">
+                                                    <identifier ColNr="28" EndColNr="32" EndLineNr="24" ID="157" LineNr="24">False</identifier>
+                                                  </NameConstant>
+                                                </listReturn>
+                                              </Return>
+                                            </statements>
+                                          </Block>
+                                        </body>
+                                      </If>
+                                      <If ColNr="1" EndColNr="39" EndLineNr="26" ID="158" LineNr="25">
+                                        <test ColNr="20" EndColNr="38" EndLineNr="25" ID="159" LineNr="25">
+                                          <Compare ColNr="20" EndColNr="38" EndLineNr="25" ID="160" LineNr="25">
+                                            <value1 ColNr="20" EndColNr="33" EndLineNr="25" ID="161" LineNr="25">
+                                              <Subscript ColNr="20" EndColNr="33" EndLineNr="25" ID="162" LineNr="25" ctx="Load">
+                                                <value ColNr="20" EndColNr="30" EndLineNr="25" ID="163" LineNr="25">
+                                                  <Subscript ColNr="20" EndColNr="30" EndLineNr="25" ID="164" LineNr="25" ctx="Load">
+                                                    <value ColNr="20" EndColNr="27" EndLineNr="25" ID="165" LineNr="25">
+                                                      <Name ColNr="20" EndColNr="27" EndLineNr="25" ID="166" LineNr="25" ctx="Load" name="splitted">
+                                                        <identifier ColNr="20" EndColNr="27" EndLineNr="25" ID="167" LineNr="25">splitted</identifier>
+                                                      </Name>
+                                                    </value>
+                                                    <slice ColNr="0" EndColNr="2" EndLineNr="25" ID="168" LineNr="25">
+                                                      <Index ColNr="29" EndColNr="29" EndLineNr="25" ID="169" LineNr="25">
+                                                        <listIndex ColNr="29" EndColNr="29" EndLineNr="25" ID="170" LineNr="25">
+                                                          <Num ColNr="29" EndColNr="29" EndLineNr="25" ID="171" LineNr="25">
+                                                            <identifier ColNr="29" EndColNr="29" EndLineNr="25" ID="172" LineNr="25">1</identifier>
+                                                          </Num>
+                                                        </listIndex>
+                                                      </Index>
+                                                    </slice>
+                                                  </Subscript>
+                                                </value>
+                                                <slice ColNr="31" EndColNr="33" EndLineNr="25" ID="173" LineNr="25">
+                                                  <Index ColNr="32" EndColNr="32" EndLineNr="25" ID="174" LineNr="25">
+                                                    <listIndex ColNr="32" EndColNr="32" EndLineNr="25" ID="175" LineNr="25">
+                                                      <Num ColNr="32" EndColNr="32" EndLineNr="25" ID="176" LineNr="25">
+                                                        <identifier ColNr="32" EndColNr="32" EndLineNr="25" ID="177" LineNr="25">0</identifier>
+                                                      </Num>
+                                                    </listIndex>
+                                                  </Index>
+                                                </slice>
+                                              </Subscript>
+                                            </value1>
+                                            <cmpop ColNr="34" EndColNr="35" EndLineNr="25" ID="178" LineNr="25">
+                                              <Name ColNr="34" EndColNr="35" EndLineNr="25" ID="179" LineNr="25">
+                                                <identifier ColNr="34" EndColNr="35" EndLineNr="25" ID="180" LineNr="25">==</identifier>
+                                              </Name>
+                                            </cmpop>
+                                            <value2 ColNr="36" EndColNr="38" EndLineNr="25" ID="181" LineNr="25">
+                                              <Str ColNr="36" EndColNr="38" EndLineNr="25" ID="182" LineNr="25">
+                                                <s ColNr="36" EndColNr="38" EndLineNr="25" ID="183" LineNr="25">'0'</s>
+                                              </Str>
+                                            </value2>
+                                          </Compare>
+                                        </test>
+                                        <body ColNr="1" EndColNr="12" EndLineNr="26" ID="184" LineNr="26">
+                                          <Block ColNr="1" EndColNr="12" EndLineNr="26" ID="185" LineNr="26">
+                                            <statements ColNr="1" EndColNr="12" EndLineNr="26" ID="186" LineNr="26">
+                                              <Return ColNr="21" EndColNr="32" EndLineNr="26" ID="187" LineNr="26">
+                                                <listReturn ColNr="21" EndColNr="32" EndLineNr="26" ID="188" LineNr="26">
+                                                  <NameConstant ColNr="28" EndColNr="32" EndLineNr="26" ID="189" LineNr="26">
+                                                    <identifier ColNr="28" EndColNr="32" EndLineNr="26" ID="190" LineNr="26">False</identifier>
+                                                  </NameConstant>
+                                                </listReturn>
+                                              </Return>
+                                            </statements>
+                                          </Block>
+                                        </body>
+                                      </If>
+                                      <Try ColNr="1" EndColNr="20" EndLineNr="30" ID="191" LineNr="27">
+                                        <body ColNr="1" EndColNr="18" EndLineNr="30" ID="192" LineNr="28">
+                                          <Block ColNr="1" EndColNr="18" EndLineNr="30" ID="193" LineNr="28">
+                                            <statements ColNr="1" EndColNr="18" EndLineNr="30" ID="194" LineNr="28">
+                                              <Assign ColNr="21" EndColNr="38" EndLineNr="28" ID="195" LineNr="28">
+                                                <listAssign ColNr="21" EndColNr="38" EndLineNr="28" ID="196" LineNr="28">
+                                                  <Targets ColNr="0" EndColNr="1" EndLineNr="28" ID="197" LineNr="28">
+                                                    <listTargets ColNr="0" EndColNr="1" EndLineNr="28" ID="198" LineNr="28">
+                                                      <Name ColNr="21" EndColNr="21" EndLineNr="28" ID="199" LineNr="28" ctx="Store" name="a">
+                                                        <identifier ColNr="21" EndColNr="21" EndLineNr="28" ID="200" LineNr="28">a</identifier>
+                                                      </Name>
+                                                    </listTargets>
+                                                  </Targets>
+                                                  <Call ColNr="23" EndColNr="38" EndLineNr="28" ID="201" LineNr="28">
+                                                    <func ColNr="23" EndColNr="25" EndLineNr="28" ID="202" LineNr="28">
+                                                      <Name ColNr="23" EndColNr="25" EndLineNr="28" ID="203" LineNr="28" ctx="Load" name="int">
+                                                        <identifier ColNr="23" EndColNr="25" EndLineNr="28" ID="204" LineNr="28">int</identifier>
+                                                      </Name>
+                                                    </func>
+                                                    <args ColNr="27" EndColNr="37" EndLineNr="28" ID="205" LineNr="28">
+                                                      <Subscript ColNr="27" EndColNr="37" EndLineNr="28" ID="206" LineNr="28" ctx="Load">
+                                                        <value ColNr="27" EndColNr="34" EndLineNr="28" ID="207" LineNr="28">
+                                                          <Name ColNr="27" EndColNr="34" EndLineNr="28" ID="208" LineNr="28" ctx="Load" name="splitted">
+                                                            <identifier ColNr="27" EndColNr="34" EndLineNr="28" ID="209" LineNr="28">splitted</identifier>
+                                                          </Name>
+                                                        </value>
+                                                        <slice ColNr="0" EndColNr="2" EndLineNr="28" ID="210" LineNr="28">
+                                                          <Index ColNr="36" EndColNr="36" EndLineNr="28" ID="211" LineNr="28">
+                                                            <listIndex ColNr="36" EndColNr="36" EndLineNr="28" ID="212" LineNr="28">
+                                                              <Num ColNr="36" EndColNr="36" EndLineNr="28" ID="213" LineNr="28">
+                                                                <identifier ColNr="36" EndColNr="36" EndLineNr="28" ID="214" LineNr="28">1</identifier>
+                                                              </Num>
+                                                            </listIndex>
+                                                          </Index>
+                                                        </slice>
+                                                      </Subscript>
+                                                    </args>
+                                                  </Call>
+                                                </listAssign>
+                                              </Assign>
+                                            </statements>
+                                          </Block>
+                                        </body>
+                                        <handlers ColNr="1" EndColNr="38" EndLineNr="29" ID="215" LineNr="28">
+                                          <ExceptHandler ColNr="1" EndColNr="38" EndLineNr="29" ID="216" LineNr="28">
+                                            <body ColNr="1" EndColNr="12" EndLineNr="29" ID="217" LineNr="30">
+                                              <Block ColNr="1" EndColNr="12" EndLineNr="29" ID="218" LineNr="30">
+                                                <statements ColNr="1" EndColNr="12" EndLineNr="29" ID="219" LineNr="30">
+                                                  <Return ColNr="21" EndColNr="32" EndLineNr="30" ID="220" LineNr="30">
+                                                    <listReturn ColNr="21" EndColNr="32" EndLineNr="30" ID="221" LineNr="30">
+                                                      <NameConstant ColNr="28" EndColNr="32" EndLineNr="30" ID="222" LineNr="30">
+                                                        <identifier ColNr="28" EndColNr="32" EndLineNr="30" ID="223" LineNr="30">False</identifier>
+                                                      </NameConstant>
+                                                    </listReturn>
+                                                  </Return>
+                                                </statements>
+                                              </Block>
+                                            </body>
+                                          </ExceptHandler>
+                                        </handlers>
+                                      </Try>
+                                    </statements>
+                                  </Block>
+                                </body>
+                              </For>
+                              <For ColNr="1" EndColNr="29" EndLineNr="32" ID="224" LineNr="31">
+                                <target ColNr="17" EndColNr="19" EndLineNr="31" ID="225" LineNr="31">
+                                  <Name ColNr="17" EndColNr="19" EndLineNr="31" ID="226" LineNr="31" ctx="Store" name="tab">
+                                    <identifier ColNr="17" EndColNr="19" EndLineNr="31" ID="227" LineNr="31">tab</identifier>
+                                  </Name>
+                                </target>
+                                <iter ColNr="24" EndColNr="28" EndLineNr="31" ID="228" LineNr="31">
+                                  <Name ColNr="24" EndColNr="28" EndLineNr="31" ID="229" LineNr="31" ctx="Load" name="ready">
+                                    <identifier ColNr="24" EndColNr="28" EndLineNr="31" ID="230" LineNr="31">ready</identifier>
+                                  </Name>
+                                </iter>
+                                <body ColNr="1" EndColNr="31" EndLineNr="32" ID="231" LineNr="32">
+                                  <Block ColNr="1" EndColNr="31" EndLineNr="32" ID="232" LineNr="32">
+                                    <statements ColNr="1" EndColNr="31" EndLineNr="32" ID="233" LineNr="32">
+                                      <Assign ColNr="17" EndColNr="47" EndLineNr="32" ID="234" LineNr="32">
+                                        <listAssign ColNr="17" EndColNr="47" EndLineNr="32" ID="235" LineNr="32">
+                                          <Targets ColNr="0" EndColNr="19" EndLineNr="32" ID="236" LineNr="32">
+                                            <listTargets ColNr="0" EndColNr="19" EndLineNr="32" ID="237" LineNr="32">
+                                              <Subscript ColNr="17" EndColNr="35" EndLineNr="32" ID="238" LineNr="32" ctx="Store">
+                                                <value ColNr="17" EndColNr="27" EndLineNr="32" ID="239" LineNr="32">
+                                                  <Name ColNr="17" EndColNr="27" EndLineNr="32" ID="240" LineNr="32" ctx="Load" name="dictionnary">
+                                                    <identifier ColNr="17" EndColNr="27" EndLineNr="32" ID="241" LineNr="32">dictionnary</identifier>
+                                                  </Name>
+                                                </value>
+                                                <slice ColNr="0" EndColNr="7" EndLineNr="32" ID="242" LineNr="32">
+                                                  <Index ColNr="29" EndColNr="34" EndLineNr="32" ID="243" LineNr="32">
+                                                    <listIndex ColNr="29" EndColNr="34" EndLineNr="32" ID="244" LineNr="32">
+                                                      <Subscript ColNr="29" EndColNr="34" EndLineNr="32" ID="245" LineNr="32" ctx="Load">
+                                                        <value ColNr="29" EndColNr="31" EndLineNr="32" ID="246" LineNr="32">
+                                                          <Name ColNr="29" EndColNr="31" EndLineNr="32" ID="247" LineNr="32" ctx="Load" name="tab">
+                                                            <identifier ColNr="29" EndColNr="31" EndLineNr="32" ID="248" LineNr="32">tab</identifier>
+                                                          </Name>
+                                                        </value>
+                                                        <slice ColNr="0" EndColNr="2" EndLineNr="32" ID="249" LineNr="32">
+                                                          <Index ColNr="33" EndColNr="33" EndLineNr="32" ID="250" LineNr="32">
+                                                            <listIndex ColNr="33" EndColNr="33" EndLineNr="32" ID="251" LineNr="32">
+                                                              <Num ColNr="33" EndColNr="33" EndLineNr="32" ID="252" LineNr="32">
+                                                                <identifier ColNr="33" EndColNr="33" EndLineNr="32" ID="253" LineNr="32">0</identifier>
+                                                              </Num>
+                                                            </listIndex>
+                                                          </Index>
+                                                        </slice>
+                                                      </Subscript>
+                                                    </listIndex>
+                                                  </Index>
+                                                </slice>
+                                              </Subscript>
+                                            </listTargets>
+                                          </Targets>
+                                          <Call ColNr="37" EndColNr="47" EndLineNr="32" ID="254" LineNr="32">
+                                            <func ColNr="37" EndColNr="39" EndLineNr="32" ID="255" LineNr="32">
+                                              <Name ColNr="37" EndColNr="39" EndLineNr="32" ID="256" LineNr="32" ctx="Load" name="int">
+                                                <identifier ColNr="37" EndColNr="39" EndLineNr="32" ID="257" LineNr="32">int</identifier>
+                                              </Name>
+                                            </func>
+                                            <args ColNr="41" EndColNr="46" EndLineNr="32" ID="258" LineNr="32">
+                                              <Subscript ColNr="41" EndColNr="46" EndLineNr="32" ID="259" LineNr="32" ctx="Load">
+                                                <value ColNr="41" EndColNr="43" EndLineNr="32" ID="260" LineNr="32">
+                                                  <Name ColNr="41" EndColNr="43" EndLineNr="32" ID="261" LineNr="32" ctx="Load" name="tab">
+                                                    <identifier ColNr="41" EndColNr="43" EndLineNr="32" ID="262" LineNr="32">tab</identifier>
+                                                  </Name>
+                                                </value>
+                                                <slice ColNr="0" EndColNr="2" EndLineNr="32" ID="263" LineNr="32">
+                                                  <Index ColNr="45" EndColNr="45" EndLineNr="32" ID="264" LineNr="32">
+                                                    <listIndex ColNr="45" EndColNr="45" EndLineNr="32" ID="265" LineNr="32">
+                                                      <Num ColNr="45" EndColNr="45" EndLineNr="32" ID="266" LineNr="32">
+                                                        <identifier ColNr="45" EndColNr="45" EndLineNr="32" ID="267" LineNr="32">1</identifier>
+                                                      </Num>
+                                                    </listIndex>
+                                                  </Index>
+                                                </slice>
+                                              </Subscript>
+                                            </args>
+                                          </Call>
+                                        </listAssign>
+                                      </Assign>
+                                    </statements>
+                                  </Block>
+                                </body>
+                              </For>
+                              <Return ColNr="13" EndColNr="23" EndLineNr="33" ID="268" LineNr="33">
+                                <listReturn ColNr="13" EndColNr="23" EndLineNr="33" ID="269" LineNr="33">
+                                  <NameConstant ColNr="20" EndColNr="23" EndLineNr="33" ID="270" LineNr="33">
+                                    <identifier ColNr="20" EndColNr="23" EndLineNr="33" ID="271" LineNr="33">True</identifier>
+                                  </NameConstant>
+                                </listReturn>
+                              </Return>
+                            </statements>
+                          </Block>
+                        </body>
+                      </With>
+                    </statements>
+                  </Block>
+                </body>
+                <handlers ColNr="1" EndColNr="23" EndLineNr="34" ID="272" LineNr="33">
+                  <ExceptHandler ColNr="1" EndColNr="23" EndLineNr="34" ID="273" LineNr="33">
+                    <type ColNr="12" EndColNr="18" EndLineNr="34" ID="274" LineNr="34">
+                      <Name ColNr="12" EndColNr="18" EndLineNr="34" ID="275" LineNr="34" ctx="Load" name="OSError">
+                        <identifier ColNr="12" EndColNr="18" EndLineNr="34" ID="276" LineNr="34">OSError</identifier>
+                      </Name>
+                    </type>
+                    <name ColNr="23" EndColNr="27" EndLineNr="34" ID="277" LineNr="34">
+                      <Name ColNr="23" EndColNr="27" EndLineNr="34" ID="278" LineNr="34">
+                        <identifier ColNr="23" EndColNr="27" EndLineNr="34" ID="279" LineNr="34">error</identifier>
+                      </Name>
+                    </name>
+                    <body ColNr="1" EndColNr="12" EndLineNr="34" ID="280" LineNr="35">
+                      <Block ColNr="1" EndColNr="12" EndLineNr="34" ID="281" LineNr="35">
+                        <statements ColNr="1" EndColNr="12" EndLineNr="34" ID="282" LineNr="35">
+                          <Return ColNr="9" EndColNr="20" EndLineNr="35" ID="283" LineNr="35">
+                            <listReturn ColNr="9" EndColNr="20" EndLineNr="35" ID="284" LineNr="35">
+                              <NameConstant ColNr="16" EndColNr="20" EndLineNr="35" ID="285" LineNr="35">
+                                <identifier ColNr="16" EndColNr="20" EndLineNr="35" ID="286" LineNr="35">False</identifier>
+                              </NameConstant>
+                            </listReturn>
+                          </Return>
+                        </statements>
+                      </Block>
+                    </body>
+                  </ExceptHandler>
+                </handlers>
+              </Try>
+            </statements>
+          </Block>
+        </body>
+      </FunctionDef>
+    </listModule>
+  </Module>
+</SourceFile>

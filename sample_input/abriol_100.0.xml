@@ -1,0 +1,37 @@
+<Module><FunctionDef name="load">def load<arguments>(<arg name="filename">filename</arg>, <arg name="dictionnary">dictionnary</arg>):</arguments><body>        # NE PAS EFFACER CETTE LIGNE
+    <Expr><Str><s>"""
+    @pre    filename est le nom d'un fichier de texte,
+            dictionnary est un dictionnaire avec :
+                comme clés : des chaînes de caractères (les noms d'utilisateurs)
+                comme valeurs : des entiers (un code pin associé à l'utilisateur)
+    @post   Met à jour le dictionnaire à partir des clients repris dans le fichier de nom filename.
+            Si une erreur se produit pendant la lecture du fichier, le dictionnaire n'est pas
+            modifié.
+            Retourne :
+                True     si le fichier a été lu sans erreurs
+                False    sinon
+    """</s></Str></Expr>
+    <Try>try:<body>
+        <With>with <items><withitem><Call><func><Name ctx="Load" name="open">open</Name></func>(<args><Name ctx="Load" name="filename">filename</Name></args>)</Call> as <Name ctx="Store" name="file">file</Name></withitem></items>:<body>
+            <Assign><targets><Name ctx="Store" name="ready">ready</Name>=</targets><List ctx="Load">[]</List></Assign>
+            <For>for <target><Name ctx="Store" name="line">line</Name></target> in <iter><Name ctx="Load" name="file">file</Name></iter>:<body>
+                <Assign><targets><Name ctx="Store" name="stripped">stripped</Name>=</targets><Call><func><Attribute ctx="Load"><value><Name ctx="Load" name="line">line</Name></value>.<attr>strip</attr></Attribute></func>()</Call></Assign>
+                <Assign><targets><Name ctx="Store" name="splitted">splitted</Name>=</targets><Call><func><Attribute ctx="Load"><value><Name ctx="Load" name="stripped">stripped</Name></value>.<attr>split</attr></Attribute></func>(<args><Str><s>"!"</s></Str></args>)</Call></Assign>
+                <Expr><Call><func><Attribute ctx="Load"><value><Name ctx="Load" name="ready">ready</Name></value>.<attr>append</attr></Attribute></func>(<args><Name ctx="Load" name="splitted">splitted</Name></args>)</Call></Expr>
+                <If>if <test><Compare><value><Call><func><Name ctx="Load" name="len">len</Name></func>(<args><Name ctx="Load" name="splitted">splitted</Name></args>)</Call></value><cmpop>!=</cmpop><value><Num>2</Num></value></Compare></test>:<body>
+                    <Return>return <NameConstant>False</NameConstant></Return></body></If>
+                <If>if <test><Compare><value><Call><func><Name ctx="Load" name="len">len</Name></func>(<args><Subscript ctx="Load"><value><Name ctx="Load" name="splitted">splitted</Name></value><slice>[<Index><Num>1</Num></Index>]</slice></Subscript></args>)</Call></value><cmpop>!=</cmpop><value><Num>4</Num></value></Compare></test>:<body>
+                    <Return>return <NameConstant>False</NameConstant></Return></body></If>
+                <If>if <test><Compare><value><Subscript ctx="Load"><value><Subscript ctx="Load"><value><Name ctx="Load" name="splitted">splitted</Name></value><slice>[<Index><Num>1</Num></Index>]</slice></Subscript></value><slice>[<Index><Num>0</Num></Index>]</slice></Subscript></value><cmpop>==</cmpop><value><Str><s>'0'</s></Str></value></Compare></test>:<body>
+                    <Return>return <NameConstant>False</NameConstant></Return></body></If>
+                <Try>try:<body>
+                    <Assign><targets><Name ctx="Store" name="a">a</Name>=</targets><Call><func><Name ctx="Load" name="int">int</Name></func>(<args><Subscript ctx="Load"><value><Name ctx="Load" name="splitted">splitted</Name></value><slice>[<Index><Num>1</Num></Index>]</slice></Subscript></args>)</Call></Assign></body><handlers><ExceptHandler>
+                except:<body>
+                    <Return>return <NameConstant>False</NameConstant></Return></body></ExceptHandler></handlers></Try></body></For>
+            <For>for <target><Name ctx="Store" name="tab">tab</Name></target> in <iter><Name ctx="Load" name="ready">ready</Name></iter>:<body>
+                <Assign><targets><Subscript ctx="Store"><value><Name ctx="Load" name="dictionnary">dictionnary</Name></value><slice>[<Index><Subscript ctx="Load"><value><Name ctx="Load" name="tab">tab</Name></value><slice>[<Index><Num>0</Num></Index>]</slice></Subscript></Index>]</slice></Subscript>=</targets><Call><func><Name ctx="Load" name="int">int</Name></func>(<args><Subscript ctx="Load"><value><Name ctx="Load" name="tab">tab</Name></value><slice>[<Index><Num>1</Num></Index>]</slice></Subscript></args>)</Call></Assign></body></For>
+            <Return>return <NameConstant>True</NameConstant></Return></body></With></body><handlers><ExceptHandler>
+    except <type><Name ctx="Load" name="OSError">OSError</Name></type> as <name>error</name>:<body>
+        <Return>return <NameConstant>False</NameConstant></Return></body></ExceptHandler></handlers></Try></body></FunctionDef>
+    ### VOTRE REPONSE
+</Module>

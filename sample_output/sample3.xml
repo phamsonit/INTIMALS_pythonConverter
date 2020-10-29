@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SourceFile FullName="/Users/user/Working/INTIMALS/softs/tree-miner/pythonConverter/sample_input/sample3.py" Language="Python">
   <Module ColNr="1" EndColNr="3" EndLineNr="21" ID="0" LineNr="1">
-    <interNode ColNr="1" EndColNr="3" EndLineNr="21" ID="1" LineNr="1">
+    <listModule ColNr="1" EndColNr="3" EndLineNr="21" ID="1" LineNr="1">
       <Expr ColNr="1" EndColNr="3" EndLineNr="3" ID="2" LineNr="1">
-        <interNode ColNr="1" EndColNr="3" EndLineNr="3" ID="3" LineNr="1">
+        <listExpr ColNr="1" EndColNr="3" EndLineNr="3" ID="3" LineNr="1">
           <Str ColNr="1" EndColNr="3" EndLineNr="3" ID="4" LineNr="1">
             <s ColNr="1" EndColNr="3" EndLineNr="3" ID="5" LineNr="1">"""class 3"""</s>
           </Str>
-        </interNode>
+        </listExpr>
       </Expr>
       <ClassDef ColNr="1" EndColNr="13" EndLineNr="17" ID="6" LineNr="4" name="Class3">
         <nameDef ColNr="7" EndColNr="12" EndLineNr="4" ID="7" LineNr="4" name="Class3">
@@ -39,18 +39,18 @@
                   <Block ColNr="1" EndColNr="28" EndLineNr="10" ID="25" LineNr="7">
                     <statements ColNr="1" EndColNr="28" EndLineNr="10" ID="26" LineNr="7">
                       <Assign ColNr="9" EndColNr="14" EndLineNr="7" ID="27" LineNr="7">
-                        <interNode ColNr="9" EndColNr="14" EndLineNr="7" ID="28" LineNr="7">
+                        <listAssign ColNr="9" EndColNr="14" EndLineNr="7" ID="28" LineNr="7">
                           <Targets ColNr="9" EndColNr="12" EndLineNr="7" ID="29" LineNr="7">
-                            <interNode ColNr="9" EndColNr="12" EndLineNr="7" ID="30" LineNr="7">
+                            <listTargets ColNr="9" EndColNr="12" EndLineNr="7" ID="30" LineNr="7">
                               <Name ColNr="9" EndColNr="10" EndLineNr="7" ID="31" LineNr="7" ctx="Store" name="re">
                                 <identifier ColNr="9" EndColNr="10" EndLineNr="7" ID="32" LineNr="7">re</identifier>
                               </Name>
-                            </interNode>
+                            </listTargets>
                           </Targets>
                           <Num ColNr="14" EndColNr="14" EndLineNr="7" ID="33" LineNr="7">
                             <identifier ColNr="14" EndColNr="14" EndLineNr="7" ID="34" LineNr="7">0</identifier>
                           </Num>
-                        </interNode>
+                        </listAssign>
                       </Assign>
                       <For ColNr="1" EndColNr="26" EndLineNr="9" ID="35" LineNr="8">
                         <target ColNr="13" EndColNr="13" EndLineNr="8" ID="36" LineNr="8">
@@ -76,39 +76,39 @@
                           <Block ColNr="1" EndColNr="10" EndLineNr="9" ID="48" LineNr="9">
                             <statements ColNr="1" EndColNr="10" EndLineNr="9" ID="49" LineNr="9">
                               <Assign ColNr="13" EndColNr="22" EndLineNr="9" ID="50" LineNr="9">
-                                <interNode ColNr="13" EndColNr="22" EndLineNr="9" ID="51" LineNr="9">
+                                <listAssign ColNr="13" EndColNr="22" EndLineNr="9" ID="51" LineNr="9">
                                   <Targets ColNr="13" EndColNr="16" EndLineNr="9" ID="52" LineNr="9">
-                                    <interNode ColNr="13" EndColNr="16" EndLineNr="9" ID="53" LineNr="9">
+                                    <listTargets ColNr="13" EndColNr="16" EndLineNr="9" ID="53" LineNr="9">
                                       <Name ColNr="13" EndColNr="14" EndLineNr="9" ID="54" LineNr="9" ctx="Store" name="re">
                                         <identifier ColNr="13" EndColNr="14" EndLineNr="9" ID="55" LineNr="9">re</identifier>
                                       </Name>
-                                    </interNode>
+                                    </listTargets>
                                   </Targets>
                                   <BinOp ColNr="18" EndColNr="22" EndLineNr="9" ID="56" LineNr="9">
-                                    <interNode ColNr="18" EndColNr="22" EndLineNr="9" ID="57" LineNr="9">
-                                      <Name ColNr="18" EndColNr="18" EndLineNr="9" ID="58" LineNr="9" ctx="Load" name="i">
+                                    <listBinOp ColNr="18" EndColNr="22" EndLineNr="9" ID="57" LineNr="9">
+                                      <Op ColNr="18" EndColNr="18" EndLineNr="9" ID="58" LineNr="9" ctx="Load" name="i">
                                         <identifier ColNr="18" EndColNr="18" EndLineNr="9" ID="59" LineNr="9">i</identifier>
-                                      </Name>
-                                      <Add ColNr="20" EndColNr="20" EndLineNr="9" ID="60" LineNr="9">
+                                      </Op>
+                                      <Op ColNr="20" EndColNr="20" EndLineNr="9" ID="60" LineNr="9">
                                         <identifier ColNr="20" EndColNr="20" EndLineNr="9" ID="61" LineNr="9"> + </identifier>
-                                      </Add>
-                                      <Name ColNr="22" EndColNr="22" EndLineNr="9" ID="62" LineNr="9" ctx="Load" name="b">
+                                      </Op>
+                                      <Op ColNr="22" EndColNr="22" EndLineNr="9" ID="62" LineNr="9" ctx="Load" name="b">
                                         <identifier ColNr="22" EndColNr="22" EndLineNr="9" ID="63" LineNr="9">b</identifier>
-                                      </Name>
-                                    </interNode>
+                                      </Op>
+                                    </listBinOp>
                                   </BinOp>
-                                </interNode>
+                                </listAssign>
                               </Assign>
                             </statements>
                           </Block>
                         </body>
                       </For>
                       <Return ColNr="9" EndColNr="17" EndLineNr="10" ID="64" LineNr="10">
-                        <interNode ColNr="9" EndColNr="17" EndLineNr="10" ID="65" LineNr="10">
+                        <listReturn ColNr="9" EndColNr="17" EndLineNr="10" ID="65" LineNr="10">
                           <Name ColNr="16" EndColNr="17" EndLineNr="10" ID="66" LineNr="10" ctx="Load" name="re">
                             <identifier ColNr="16" EndColNr="17" EndLineNr="10" ID="67" LineNr="10">re</identifier>
                           </Name>
-                        </interNode>
+                        </listReturn>
                       </Return>
                     </statements>
                   </Block>
@@ -135,18 +135,18 @@
                   <Block ColNr="1" EndColNr="28" EndLineNr="17" ID="80" LineNr="13">
                     <statements ColNr="1" EndColNr="28" EndLineNr="17" ID="81" LineNr="13">
                       <Assign ColNr="9" EndColNr="14" EndLineNr="13" ID="82" LineNr="13">
-                        <interNode ColNr="9" EndColNr="14" EndLineNr="13" ID="83" LineNr="13">
+                        <listAssign ColNr="9" EndColNr="14" EndLineNr="13" ID="83" LineNr="13">
                           <Targets ColNr="9" EndColNr="12" EndLineNr="13" ID="84" LineNr="13">
-                            <interNode ColNr="9" EndColNr="12" EndLineNr="13" ID="85" LineNr="13">
+                            <listTargets ColNr="9" EndColNr="12" EndLineNr="13" ID="85" LineNr="13">
                               <Name ColNr="9" EndColNr="10" EndLineNr="13" ID="86" LineNr="13" ctx="Store" name="re">
                                 <identifier ColNr="9" EndColNr="10" EndLineNr="13" ID="87" LineNr="13">re</identifier>
                               </Name>
-                            </interNode>
+                            </listTargets>
                           </Targets>
                           <Num ColNr="14" EndColNr="14" EndLineNr="13" ID="88" LineNr="13">
                             <identifier ColNr="14" EndColNr="14" EndLineNr="13" ID="89" LineNr="13">0</identifier>
                           </Num>
-                        </interNode>
+                        </listAssign>
                       </Assign>
                       <For ColNr="1" EndColNr="31" EndLineNr="16" ID="90" LineNr="14">
                         <target ColNr="13" EndColNr="13" EndLineNr="14" ID="91" LineNr="14">
@@ -166,17 +166,17 @@
                                 <identifier ColNr="24" EndColNr="24" EndLineNr="14" ID="101" LineNr="14">a</identifier>
                               </Name>
                               <BinOp ColNr="27" EndColNr="29" EndLineNr="14" ID="102" LineNr="14">
-                                <interNode ColNr="27" EndColNr="29" EndLineNr="14" ID="103" LineNr="14">
-                                  <Name ColNr="24" EndColNr="24" EndLineNr="14" ID="104" LineNr="14" ctx="Load" name="a">
+                                <listBinOp ColNr="27" EndColNr="29" EndLineNr="14" ID="103" LineNr="14">
+                                  <Op ColNr="24" EndColNr="24" EndLineNr="14" ID="104" LineNr="14" ctx="Load" name="a">
                                     <identifier ColNr="24" EndColNr="24" EndLineNr="14" ID="105" LineNr="14">a</identifier>
-                                  </Name>
-                                  <Add ColNr="28" EndColNr="28" EndLineNr="14" ID="106" LineNr="14">
+                                  </Op>
+                                  <Op ColNr="28" EndColNr="28" EndLineNr="14" ID="106" LineNr="14">
                                     <identifier ColNr="28" EndColNr="28" EndLineNr="14" ID="107" LineNr="14">+</identifier>
-                                  </Add>
-                                  <Name ColNr="29" EndColNr="29" EndLineNr="14" ID="108" LineNr="14" ctx="Load" name="b">
+                                  </Op>
+                                  <Op ColNr="29" EndColNr="29" EndLineNr="14" ID="108" LineNr="14" ctx="Load" name="b">
                                     <identifier ColNr="29" EndColNr="29" EndLineNr="14" ID="109" LineNr="14">b</identifier>
-                                  </Name>
-                                </interNode>
+                                  </Op>
+                                </listBinOp>
                               </BinOp>
                             </args>
                           </Call>
@@ -189,17 +189,17 @@
                                   <Compare ColNr="16" EndColNr="25" EndLineNr="15" ID="115" LineNr="15">
                                     <value1 ColNr="16" EndColNr="20" EndLineNr="15" ID="116" LineNr="15">
                                       <BinOp ColNr="16" EndColNr="20" EndLineNr="15" ID="117" LineNr="15">
-                                        <interNode ColNr="16" EndColNr="20" EndLineNr="15" ID="118" LineNr="15">
-                                          <Name ColNr="16" EndColNr="16" EndLineNr="15" ID="119" LineNr="15" ctx="Load" name="i">
+                                        <listBinOp ColNr="16" EndColNr="20" EndLineNr="15" ID="118" LineNr="15">
+                                          <Op ColNr="16" EndColNr="16" EndLineNr="15" ID="119" LineNr="15" ctx="Load" name="i">
                                             <identifier ColNr="16" EndColNr="16" EndLineNr="15" ID="120" LineNr="15">i</identifier>
-                                          </Name>
-                                          <Mod ColNr="18" EndColNr="18" EndLineNr="15" ID="121" LineNr="15">
+                                          </Op>
+                                          <Op ColNr="18" EndColNr="18" EndLineNr="15" ID="121" LineNr="15">
                                             <identifier ColNr="18" EndColNr="18" EndLineNr="15" ID="122" LineNr="15"> % </identifier>
-                                          </Mod>
-                                          <Num ColNr="20" EndColNr="20" EndLineNr="15" ID="123" LineNr="15">
+                                          </Op>
+                                          <Op ColNr="20" EndColNr="20" EndLineNr="15" ID="123" LineNr="15">
                                             <identifier ColNr="20" EndColNr="20" EndLineNr="15" ID="124" LineNr="15">2</identifier>
-                                          </Num>
-                                        </interNode>
+                                          </Op>
+                                        </listBinOp>
                                       </BinOp>
                                     </value1>
                                     <cmpop ColNr="22" EndColNr="23" EndLineNr="15" ID="125" LineNr="15">
@@ -218,28 +218,28 @@
                                   <Block ColNr="1" EndColNr="10" EndLineNr="16" ID="132" LineNr="16">
                                     <statements ColNr="1" EndColNr="10" EndLineNr="16" ID="133" LineNr="16">
                                       <Assign ColNr="17" EndColNr="26" EndLineNr="16" ID="134" LineNr="16">
-                                        <interNode ColNr="17" EndColNr="26" EndLineNr="16" ID="135" LineNr="16">
+                                        <listAssign ColNr="17" EndColNr="26" EndLineNr="16" ID="135" LineNr="16">
                                           <Targets ColNr="17" EndColNr="20" EndLineNr="16" ID="136" LineNr="16">
-                                            <interNode ColNr="17" EndColNr="20" EndLineNr="16" ID="137" LineNr="16">
+                                            <listTargets ColNr="17" EndColNr="20" EndLineNr="16" ID="137" LineNr="16">
                                               <Name ColNr="17" EndColNr="18" EndLineNr="16" ID="138" LineNr="16" ctx="Store" name="re">
                                                 <identifier ColNr="17" EndColNr="18" EndLineNr="16" ID="139" LineNr="16">re</identifier>
                                               </Name>
-                                            </interNode>
+                                            </listTargets>
                                           </Targets>
                                           <BinOp ColNr="22" EndColNr="26" EndLineNr="16" ID="140" LineNr="16">
-                                            <interNode ColNr="22" EndColNr="26" EndLineNr="16" ID="141" LineNr="16">
-                                              <Name ColNr="22" EndColNr="22" EndLineNr="16" ID="142" LineNr="16" ctx="Load" name="i">
+                                            <listBinOp ColNr="22" EndColNr="26" EndLineNr="16" ID="141" LineNr="16">
+                                              <Op ColNr="22" EndColNr="22" EndLineNr="16" ID="142" LineNr="16" ctx="Load" name="i">
                                                 <identifier ColNr="22" EndColNr="22" EndLineNr="16" ID="143" LineNr="16">i</identifier>
-                                              </Name>
-                                              <Add ColNr="24" EndColNr="24" EndLineNr="16" ID="144" LineNr="16">
+                                              </Op>
+                                              <Op ColNr="24" EndColNr="24" EndLineNr="16" ID="144" LineNr="16">
                                                 <identifier ColNr="24" EndColNr="24" EndLineNr="16" ID="145" LineNr="16"> + </identifier>
-                                              </Add>
-                                              <Name ColNr="26" EndColNr="26" EndLineNr="16" ID="146" LineNr="16" ctx="Load" name="b">
+                                              </Op>
+                                              <Op ColNr="26" EndColNr="26" EndLineNr="16" ID="146" LineNr="16" ctx="Load" name="b">
                                                 <identifier ColNr="26" EndColNr="26" EndLineNr="16" ID="147" LineNr="16">b</identifier>
-                                              </Name>
-                                            </interNode>
+                                              </Op>
+                                            </listBinOp>
                                           </BinOp>
-                                        </interNode>
+                                        </listAssign>
                                       </Assign>
                                     </statements>
                                   </Block>
@@ -250,11 +250,11 @@
                         </body>
                       </For>
                       <Return ColNr="9" EndColNr="17" EndLineNr="17" ID="148" LineNr="17">
-                        <interNode ColNr="9" EndColNr="17" EndLineNr="17" ID="149" LineNr="17">
+                        <listReturn ColNr="9" EndColNr="17" EndLineNr="17" ID="149" LineNr="17">
                           <Name ColNr="16" EndColNr="17" EndLineNr="17" ID="150" LineNr="17" ctx="Load" name="re">
                             <identifier ColNr="16" EndColNr="17" EndLineNr="17" ID="151" LineNr="17">re</identifier>
                           </Name>
-                        </interNode>
+                        </listReturn>
                       </Return>
                     </statements>
                   </Block>
@@ -265,13 +265,13 @@
         </body>
       </ClassDef>
       <Assign ColNr="1" EndColNr="14" EndLineNr="20" ID="152" LineNr="20">
-        <interNode ColNr="1" EndColNr="14" EndLineNr="20" ID="153" LineNr="20">
+        <listAssign ColNr="1" EndColNr="14" EndLineNr="20" ID="153" LineNr="20">
           <Targets ColNr="1" EndColNr="5" EndLineNr="20" ID="154" LineNr="20">
-            <interNode ColNr="1" EndColNr="5" EndLineNr="20" ID="155" LineNr="20">
+            <listTargets ColNr="1" EndColNr="5" EndLineNr="20" ID="155" LineNr="20">
               <Name ColNr="1" EndColNr="3" EndLineNr="20" ID="156" LineNr="20" ctx="Store" name="cla">
                 <identifier ColNr="1" EndColNr="3" EndLineNr="20" ID="157" LineNr="20">cla</identifier>
               </Name>
-            </interNode>
+            </listTargets>
           </Targets>
           <Call ColNr="7" EndColNr="14" EndLineNr="20" ID="158" LineNr="20">
             <func ColNr="7" EndColNr="12" EndLineNr="20" ID="159" LineNr="20">
@@ -280,10 +280,10 @@
               </Name>
             </func>
           </Call>
-        </interNode>
+        </listAssign>
       </Assign>
       <Expr ColNr="1" EndColNr="24" EndLineNr="21" ID="162" LineNr="21">
-        <interNode ColNr="1" EndColNr="24" EndLineNr="21" ID="163" LineNr="21">
+        <listExpr ColNr="1" EndColNr="24" EndLineNr="21" ID="163" LineNr="21">
           <Call ColNr="1" EndColNr="24" EndLineNr="21" ID="164" LineNr="21">
             <func ColNr="1" EndColNr="5" EndLineNr="21" ID="165" LineNr="21">
               <Name ColNr="1" EndColNr="5" EndLineNr="21" ID="166" LineNr="21" ctx="Load" name="print">
@@ -317,8 +317,8 @@
               </Call>
             </args>
           </Call>
-        </interNode>
+        </listExpr>
       </Expr>
-    </interNode>
+    </listModule>
   </Module>
 </SourceFile>

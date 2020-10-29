@@ -267,12 +267,13 @@ public class TransformPyAST {
      * @param node : node
      */
     private void addInterNode(Node node) {
-
+        // change name of children if this node is BinOp
         if(node.getNodeName().equals("BinOp"))
             changeNameForBinOp(node);
 
-        String tagName = "list"+node.getNodeName();
         //add intermediate node
+        String tagName = "list"+node.getNodeName();
+
         addIntermediateNode(node, tagName);
 
         //move children to intermediate node
@@ -292,14 +293,20 @@ public class TransformPyAST {
         }
     }
 
+    /**
+     * change name of children into Op
+     * @param node
+     */
     private void changeNameForBinOp(Node node){
         NodeList nodeList = node.getChildNodes();
         int count=0;
         for(int i=0; i<nodeList.getLength(); ++i){
             if(nodeList.item(i).getNodeType() == Node.ELEMENT_NODE){
-                String nodeName = "Op"+(count+1);
-                document.renameNode(nodeList.item(i),null,nodeName);
-                ++count;
+                if(!nodeList.item(i).getNodeName().equals("BinOp")) {
+                    String nodeName = "Op";
+                    document.renameNode(nodeList.item(i), null, nodeName);
+                    ++count;
+                }
             }
         }
 
